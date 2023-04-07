@@ -1,4 +1,4 @@
- .u-section-1 {
+.u-section-1 {
   background-image: linear-gradient(#2777f3, black);
 }
 
@@ -25,24 +25,12 @@
   margin: -307px auto 0;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .u-section-1 .u-group-elements-1 {
-    width: 550px;
-    /*width: 659px;*/
+    width: 659px;
     min-height: 238px;
     height: auto;
   }
-  
-  /* edited this and added to be responsive */
-  @media (max-width: 1199px)
-  {
-  .u-section-1 .u-image-1 {
-      width: 95px;
-      height: 95px;
-      margin-top: 135px;
-      margin-left: 510px;
-  }
-}
 
   .u-section-1 .u-image-1 {
     width: 95px;
@@ -67,10 +55,9 @@
     margin-top: 82px;
   }
 
-
   .u-section-1 .u-image-1 {
     margin-top: 138px;
-    margin-right: 200px;
+    margin-right: 91px;
   }
 
   .u-section-1 .u-text-1 {
