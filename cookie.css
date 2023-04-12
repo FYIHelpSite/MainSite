@@ -5,12 +5,12 @@
   position: fixed;
   bottom: 50px;
   right: -370px;
-  max-width: 345px;
+  max-width: 300px;
   width: 100%;
   background: #fff;
   border-radius: 8px;
   padding: 15px 25px 22px;
-  transition: right 0.3s ease;
+  transition: right 0.3 ease; 
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -44,6 +44,9 @@ header h2 {
   color: #4070f4;
   text-decoration: none;
   text-align: center; 
+  text-justify: auto;
+  word-spacing: normal;
+  font-style: normal; 
 }
 
 .data-cookie p a:hover {
