@@ -13,10 +13,14 @@
     <meta name="twitter:description" content="FYI is a collaborative communication messaging platform for the creative community to manage their digital assets. For the ones who drive culture forward">
     <meta name="twitter:image" content="./../images/logofyi.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    
+
+
+
     <meta name="description" content="FYI is the ultimate productivity tool for creatives">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>FYI - Focus Your Ideas</title>
+	  <!-- test x for banner -->
+	  <link href="http://www.w3.org/2000/svg" rel="stylesheet"/>
     <!-- Boxicons CSS -->
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
 	<!-- cookies.js -->
@@ -46,7 +50,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 
 <!-- test commit, all code is on github just commit from within vs code and merge/sync changes -->
     <script type="application/ld+json">{
-		"@context": "http://schema.org",
+		"@context": "https://schema.org",
 		"@type": "Organization",
 		"name": "FYI - Focus Your Ideas",
 		"logo": "images/FYILOGO1.svg"
@@ -79,8 +83,8 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
                 <nav class="u-align-left u-menu u-menu-one-level u-offcanvas u-menu-1" data-responsive-from="XL">
                   <div class="menu-collapse">
                     <a class="u-button-style u-custom-left-right-menu-spacing u-custom-top-bottom-menu-spacing u-nav-link u-text-white" href="#" style="padding: 7px 4px; font-size: calc(1em + 14px);">
-                      <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1abf"></use></svg>
-                      <svg class="u-svg-content" version="1.1" id="svg-1abf" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+                      <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#svg-1abf"></use></svg>
+                      <svg class="u-svg-content" version="1.1" id="svg-1abf" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="https://www.w3.org/1999/xlink" xmlns="https://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
 </g></svg>
                     </a>
                   </div>
@@ -118,7 +122,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
     <section class="u-align-center u-clearfix u-gradient u-section-1" id="sec-85a1">
       <div class="u-align-left u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="u-align-center u-clearfix u-group-elements u-group-elements-1">
-          <img alt=“Fire emoji” class="u-align-center u-image u-image-default u-preserve-proportions u-image-1" src="images/ezgif-4-592dcfe940.gif" alt="" data-image-width="200" data-image-height="200">
+          <img alt="Fire emoji" class="u-align-center u-image u-image-default u-preserve-proportions u-image-1" src="images/ezgif-4-592dcfe940.gif" alt="" data-image-width="200" data-image-height="200">
           <h1 class="u-align-left u-text u-text-white u-text-1">FYI is the ultimate productivity tool for creatives</h1>
 
 
@@ -126,16 +130,27 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 		<div class="wrapper-cookie">
 			<header>
 			  <i class="bx bx-cookie"></i>
+			  <i class="bi bi-x-lg"></i>
+		
+			  <!-- CSS for x click on banner -->
+	
+			  <!-- this is the class of the cookie icon we have -->
 			  <h2>Cookie Consent</h2>
+			  <h2 style="display:inline-block; position: absolute; right: 0; font-size:1.5rem; line-height:1; margin:0; padding: 0;">
+				<button class="button-cookie" id="acceptBtn-cookie" style="height:2rem; padding:0.25rem 0.3rem;">x</button>
+			  </h2>
+			  
 			</header>
 	  
 			<div class="data-cookie">
 			  <p>This website uses cookies. We use cookies to personalize content. We share information about your use of our site with our analytics partners who may use it with other information that you've provided to them or that they've collected from your use of their services. View our <a href="cookies.html" target="_blank"> Cookie Policy Here.</a></p>
+			  <!-- example of how link texts need descriptive text such as a href = "cookies here" -->
 			</div>
 	  
 			<div class="buttons-cookie">
 			  <button class="button-cookie" id="acceptBtn-cookie">Accept</button>
 			  <button class="button-cookie" id="declineBtn-cookie">Decline</button>
+			
 			</div>
 		  </div>
 		  </div>
@@ -319,6 +334,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 								style="z-index:25;"
 							><!--
 								--><rs-layer
+								
 									id="slider-81-slide-124-layer-4" 
 									class="rs-nolc rs-layer-video intrinsic-ignore"
 									data-type="video"
@@ -839,6 +855,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 							--><a
 								id="slider-81-slide-124-layer-7" 
 								class="rs-layer rev-btn rev-hiddenicon"
+								
 								href="encryption/" target="_self" rel="nofollow"
 								data-type="button"
 								data-rsp_ch="on"
@@ -1045,6 +1062,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
         <h1 class="u-text u-text-1">Protecting your data with the most advanced end-to-end encryption</h1>
         <p class="u-custom-font u-heading-font u-text u-text-2"> FYI uses ECDHE and ECDSA to protect your messages and projects, the same cryptography methods used in securing Bitcoin and Ethereum transactions. Your art deserves state-of-the-art protection</p>
         <a href="encryption/" data-page-id="65818436" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-grey-75 u-radius-14 u-btn-1">learn more</a>
+		
       </div>
     </section>
     <section class="u-black u-clearfix u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xl u-section-4" id="carousel_2504">
@@ -1542,8 +1560,8 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
                   <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="XS">
                     <div class="menu-collapse" style="font-size: 0.875rem; letter-spacing: 0px; text-transform: uppercase; font-weight: 700;">
                       <a class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link" href="#">
-                        <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-238d"></use></svg>
-                        <svg class="u-svg-content" version="1.1" id="svg-238d" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+                        <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#svg-238d"></use></svg>
+                        <svg class="u-svg-content" version="1.1" id="svg-238d" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="https://www.w3.org/1999/xlink" xmlns="https://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
 </g></svg>
                       </a>
                     </div>

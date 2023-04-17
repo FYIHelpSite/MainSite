@@ -1,5 +1,10 @@
 /* Google Fonts - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("http://www.w3.org/2000/svg");
+
+/*http://www.w3.org/2000/svg*/
+
+/*<i class="click x-cookie"></i>*/
 
 .wrapper-cookie {
   position: fixed;
@@ -22,16 +27,22 @@
   align-items: center;
   column-gap: 15px;
 }
+.bi bi-x-lg
+{
+ color: blue; 
+ font-size: 32px;
+ text-align: center; 
+}
 header i {
   color: #4070f4;
-  font-size: 32px;
+  font-size: 27px;
   text-align: center;
 }
 header h2 {
   color: #4070f4;
   font-weight: 400;
   text-align: center;
-  margin-right: 40px;
+  margin-right: 50px;
 }
 .wrapper-cookie .data-cookie {
   margin-top: 16px;
