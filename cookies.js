@@ -7,10 +7,31 @@ The cookie itself can ask for a user prompt such as a name and this data can be 
 these are session cookies because they only last during the session 
 There are some platforms like Monsito and One trust that do the cookie part for you and ensure it is compliant, though its not free 
 So far the cookies we create separately are deleted but the google analytics cookies remain and they are not essential 
+GA cookies remain so these analytics appear to stay on the site 
+Now the banner will not appear if the saved cookie exists in the browser 
+
+github git ignore remove
+
+rm .gitignore
+del .gititgnore
+git add .
+git commit -m "removed"
+git push
 */
+
+/* if any of these cookies exist (meaning user has given consent) then the banner will not pop up */
+if (document.cookie.includes("FYI_Name_Check")) {
+  cookieBox.classList.remove("show");
+}
+
+if (document.cookie.includes("FYI_Example_Cookie"))
+{
+  cookieBox.classList.remove("show");
+}
 
 const cookieBox = document.querySelector(".wrapper-cookie");
 const buttons = document.querySelectorAll(".button-cookie");
+
 
 const executeCodes = () => {
 // Check if cookie contains coding lab cookie once the website is active
@@ -19,6 +40,7 @@ cookieBox.classList.remove("show");
 } else {
 cookieBox.classList.add("show");
 }
+
 
 buttons.forEach((button) => {
 button.addEventListener("click", () => {
@@ -84,6 +106,7 @@ gid('set', 'allowLinker', false);
 document.cookie = "_ga=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 document.cookie = "_gid=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 /* can probably make this into a function */
+
 }
 });
 });
@@ -96,6 +119,7 @@ function deleteCookies() {
         document.cookie = theCookies[i].split('=')[0] + '=; path=/; expires=Thu, 01 Jan 1970 00:00:01 PST;';
     }
 }
+
 
 
 window.addEventListener("load", executeCodes);
