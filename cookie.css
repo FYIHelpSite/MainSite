@@ -15,6 +15,7 @@
   transition: right 0.3 ease; 
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
+/*creates wrapper*/
 
 .wrapper-cookie.show {
   right: 20px;
@@ -30,6 +31,7 @@
  font-size: 32px;
  text-align: center; 
 }
+/* edits the header for the icon */
 header i {
   color: #4070f4;
   font-size: 27px;
@@ -48,6 +50,7 @@ header h2 {
   color: #333;
   font-size: 16px;
 }
+/* cookie text and links */
 .data-cookie p a {
   color: #4070f4;
   text-decoration: none;
@@ -56,10 +59,11 @@ header h2 {
   word-spacing: normal;
   font-style: normal; 
 }
-
+/* hover */
 .data-cookie p a:hover {
   text-decoration: underline;
 }
+/* cookie button */
 .wrapper-cookie .buttons {
   margin-top: 16px;
   width: 100%;
@@ -77,9 +81,11 @@ header h2 {
   width: calc(100% / 2 - 10px);
   transition: all 0.2s ease;
 }
+/* accept button color */
 .buttons-cookie #acceptBtn-cookie:hover {
   background-color: #034bf1;
 }
+/* decline button color */
 #declineBtn-cookie {
   border: 2px solid #4070f4;
   background-color: #fff;
