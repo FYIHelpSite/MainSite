@@ -1,3 +1,5 @@
+// begin cookie.js
+
 /* 
 Once someone is on the site this js code will launch the button asking for cookie permission 
 If the cookie already exists on the system then the launcher will not show up as the cookie has already been accepted/denied
@@ -25,7 +27,10 @@ git commit -m "removed"
 git push
 */
 
-/* if any of these cookies exist (meaning user has given consent) then the banner will not pop up */
+const cookieBox = document.querySelector(".wrapper-cookie");
+const buttons = document.querySelectorAll(".button-cookie");
+
+// if any of these cookies exist (meaning user has given consent) then the banner will not pop up
 if (document.cookie.includes("FYI_Name_Check")) {
   cookieBox.classList.remove("show");
 }
@@ -34,10 +39,6 @@ if (document.cookie.includes("FYI_Example_Cookie"))
 {
   cookieBox.classList.remove("show");
 }
-
-const cookieBox = document.querySelector(".wrapper-cookie");
-const buttons = document.querySelectorAll(".button-cookie");
-
 
 const executeCodes = () => {
 // Check if cookie contains FYI name check cookie once the website is active
@@ -58,11 +59,12 @@ else
   cookieBox.classList.add("show");
 }
 
-/* tests to see if decline holds the 1 day cookie */
-if (document.cookie.includes("decline"))
+// if not then the cookie banner would always appear even if declined bc no preference was stored 
+if (document.cookie.includes("declineSavePref"))
 {
   cookieBox.classList.remove("show");
 }
+// else show the banner 
 else
 {
   cookieBox.classList.add("show");
@@ -83,12 +85,12 @@ if (button.id == "acceptBtn-cookie") {
   document.cookie = "userName=${name}; expires=0";
 } 
 
-/* this is a cookie that saves the decline value so that the user does not need to decline after one day */
+// this is a cookie that saves the decline value so that the user does not need to decline till after one day
 if (button.id == "declineBtn-cookie")
 {
   // decline cookie 
   var expires = (new Date(Date.now() + 86400 * 1000)).toUTCString();
-  document.cookie = "declineCookieSave=decline; expires=" + expires + ";path=/";
+  document.cookie = "declineCookieSave=declineSavePref; expires=" + expires + ";path=/";
 }
 
 else 
@@ -97,7 +99,7 @@ else
   document.cookie = "cookieBy=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
   document.cookie = "userName=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
 
-/* these cookies are google analytic cookies and they are set to false/null to not track this data */
+// these cookies are google analytic cookies and they are set to false/null 
 ga('set', 'anonymizeIp', true);
 ga('set', 'displayFeaturesTask', null);
 ga('set', 'useAmpClientId', null);
@@ -141,16 +143,8 @@ document.cookie = "_gtag=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure
 document.cookie = "_gat; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
 document.cookie = "__cf_bm; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
 document.cookie = "JAR; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure";
-/* specific cookie name */
-
-document.cookie = "ga; expires= Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
-document.cookie = "gid; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
-document.cookie = "gtag; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
-document.cookie = "gat; expires = Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
-document.cookie = "cf; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
-
+// document.cookie = "decline; expires"+ expires +";path=/";
 /* google fonts, google analytics, gtag manager, google ads */
-
 }
 });
 });
@@ -175,3 +169,4 @@ document.cookie = "_ga=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 document.cookie = "_gat=; expires=Thu, 01 Jan 2000 00:00::00 UTC; path=/;";
 
 window.addEventListener("load", executeCodes);
+// end cookie.js
