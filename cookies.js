@@ -58,6 +58,15 @@ else
   cookieBox.classList.add("show");
 }
 
+/* tests to see if decline holds the 1 day cookie */
+if (document.cookie.includes("decline"))
+{
+  cookieBox.classList.remove("show");
+}
+else
+{
+  cookieBox.classList.add("show");
+}
 
 buttons.forEach((button) => {
 button.addEventListener("click", () => {
@@ -70,11 +79,20 @@ if (button.id == "acceptBtn-cookie") {
   document.cookie = "cookieBy=FYI_Example_Cookie; expires= 0";
   // document.cookie = "cookieBy=userName; expires= 0";
   // Get the user's name and store it in a cookie
-  const name = prompt("Please enter your name:");
+
   document.cookie = "userName=${name}; expires=0";
 } 
 
-else {
+/* this is a cookie that saves the decline value so that the user does not need to decline after one day */
+if (button.id == "declineBtn-cookie")
+{
+  // decline cookie 
+  var expires = (new Date(Date.now() + 86400 * 1000)).toUTCString();
+  document.cookie = "declineCookieSave=decline; expires=" + expires + ";path=/";
+}
+
+else 
+{
   // Delete the cookies because this date has already passed 
   document.cookie = "cookieBy=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
   document.cookie = "userName=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
@@ -123,6 +141,14 @@ document.cookie = "_gtag=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure
 document.cookie = "_gat; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
 document.cookie = "__cf_bm; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
 document.cookie = "JAR; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure";
+/* specific cookie name */
+
+document.cookie = "ga; expires= Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
+document.cookie = "gid; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
+document.cookie = "gtag; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
+document.cookie = "gat; expires = Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
+document.cookie = "cf; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
+
 /* google fonts, google analytics, gtag manager, google ads */
 
 }
@@ -135,6 +161,7 @@ function deleteCookies() {
     var theCookies = document.cookie.split(';');
     for (var i = 0 ; i < theCookies.length; i++) {
         document.cookie = theCookies[i].split('=')[0] + "=; path=/; expires=Thu, 01 Jan 1970 00:00:00 PST; secure;";
+        /* last check to delete cookies */
     }
 }
 
@@ -148,14 +175,3 @@ document.cookie = "_ga=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 document.cookie = "_gat=; expires=Thu, 01 Jan 2000 00:00::00 UTC; path=/;";
 
 window.addEventListener("load", executeCodes);
-
-
-
-/* 
-In this code, the executeCodes function now checks if the FYI cookie is present. 
-If it is, then the consent box is hidden. If it's not, the consent box is displayed.
-When the "Accept" button is clicked, the FYI
-cookie is set to expire at the end of the session. 
-When the "Decline" button is clicked then none of the cookies created by the site should be stored unless 
-they are 'essential; for the site to function 
-*/
