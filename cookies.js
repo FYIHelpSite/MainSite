@@ -27,19 +27,11 @@ git commit -m "removed"
 git push
 */
 
+// creates the cookie box and button banner 
 const cookieBox = document.querySelector(".wrapper-cookie");
 const buttons = document.querySelectorAll(".button-cookie");
 
 // if any of these cookies exist (meaning user has given consent) then the banner will not pop up
-if (document.cookie.includes("FYI_Name_Check")) {
-  cookieBox.classList.remove("show");
-}
-
-if (document.cookie.includes("FYI_Example_Cookie"))
-{
-  cookieBox.classList.remove("show");
-}
-
 const executeCodes = () => {
 // Check if cookie contains FYI name check cookie once the website is active
 if (document.cookie.includes("FYI_Name_Check")) {
@@ -53,6 +45,15 @@ cookieBox.classList.add("show");
 if (document.cookie.includes("FYI_Example_Cookie"))
 {
   cookieBox.classList.remove("show");
+}
+else
+{
+  cookieBox.classList.add("show");
+}
+// cookie for saved preference 
+if (document.cookie.includes("savePref"))
+{
+  cookie.Box.classList.remove("show");
 }
 else
 {
@@ -79,17 +80,19 @@ if (button.id == "acceptBtn-cookie") {
   // Set the cookie to expire at the end of the session
   document.cookie = "cookieBy=FYI_Name_Check; expires=0";
   document.cookie = "cookieBy=FYI_Example_Cookie; expires= 0";
-  // document.cookie = "cookieBy=userName; expires= 0";
-  // Get the user's name and store it in a cookie
-
-  document.cookie = "userName=${name}; expires=0";
+  const expires = (new Date(Date.now() + 86400 * 1000 * 7));
+  expires.toUTCString();
+  document.cookie = "acceptCookieSave = savePref; expires= " + expires + ";path=/";
 } 
 
-// this is a cookie that saves the decline value so that the user does not need to decline till after one day
+// this is a cookie that saves the decline value so that the user does not need to decline till after 7 days 
 if (button.id == "declineBtn-cookie")
 {
   // decline cookie 
-  var expires = (new Date(Date.now() + 86400 * 1000)).toUTCString();
+  const expires = (new Date(Date.now() + 86400 * 1000 * 7));
+  // 86400 * 1000 = 1 day 
+  expires.toUTCString();
+
   document.cookie = "declineCookieSave=declineSavePref; expires=" + expires + ";path=/";
 }
 
@@ -143,30 +146,11 @@ document.cookie = "_gtag=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure
 document.cookie = "_gat; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
 document.cookie = "__cf_bm; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
 document.cookie = "JAR; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure";
-// document.cookie = "decline; expires"+ expires +";path=/";
 /* google fonts, google analytics, gtag manager, google ads */
 }
 });
 });
 };
-
-
-function deleteCookies() {
-    var theCookies = document.cookie.split(';');
-    for (var i = 0 ; i < theCookies.length; i++) {
-        document.cookie = theCookies[i].split('=')[0] + "=; path=/; expires=Thu, 01 Jan 1970 00:00:00 PST; secure;";
-        /* last check to delete cookies */
-    }
-}
-
-
-deleteCookies();
-document.cookie = "_ga=; expires= Wed, 19 April 2023 2:59 UTC; path=/; secure";
-document.cookie = "ga; expires= Wed, 19 April 2023 2:59 UTC; path=/; secure";
-document.cookie = "_ga; expires= Wed, 19 April 2023 2:59 UTC; path=/; secure";
-
-document.cookie = "_ga=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-document.cookie = "_gat=; expires=Thu, 01 Jan 2000 00:00::00 UTC; path=/;";
 
 window.addEventListener("load", executeCodes);
 // end cookie.js
