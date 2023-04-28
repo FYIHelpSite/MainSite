@@ -27,6 +27,7 @@
   align-items: center;
   column-gap: 15px;
 }
+/* part of the cookie icon */
 .bi bi-x-lg
 {
  color: blue; 
@@ -39,6 +40,7 @@ header i {
   font-size: 27px;
   text-align: center;
 }
+/* header change h2 text */
 header h2 {
   color: #4070f4;
   font-weight: 400;
