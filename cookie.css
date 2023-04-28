@@ -87,7 +87,7 @@ header h2 {
 }
 /* accept button color */
 .buttons-cookie #acceptBtn-cookie:hover {
-  background-color: #034bf1;
+  background-color: #434b5e;
 }
 /* decline button color */
 #declineBtn-cookie {
@@ -97,7 +97,7 @@ header h2 {
 }
 
 #declineBtn-cookie:hover {
-  background-color: #4070f4;
+  background-color: #434b5e;
   color: #fff;
 }
 

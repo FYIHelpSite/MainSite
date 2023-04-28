@@ -22,33 +22,21 @@ const buttons = document.querySelectorAll(".button-cookie");
 // if any of these cookies exist (meaning user has given consent) then the banner will not pop up
 const executeCodes = () => {
 // Check if cookie contains FYI name check cookie once the website is active
-if (document.cookie.includes("timeCookie")) {
-cookieBox.classList.remove("show");
-} 
-else 
-{
-cookieBox.classList.add("show");
-}
+
 // cookie for saved preference 
 if (document.cookie.includes("savePref"))
 {
-  cookie.Box.classList.remove("show");
+  cookieBox.classList.remove("show");
+}
+else if (document.cookie.includes("declineSavePref"))
+{
+  cookieBox.classList.remove("show")
 }
 else
 {
   cookieBox.classList.add("show");
 }
 
-// if not then the cookie banner would always appear even if declined bc no preference was stored 
-if (document.cookie.includes("declineSavePref"))
-{
-  cookieBox.classList.remove("show");
-}
-// else show the banner 
-else
-{
-  cookieBox.classList.add("show");
-}
 
 buttons.forEach((button) => {
 button.addEventListener("click", () => {
@@ -57,27 +45,24 @@ cookieBox.classList.remove("show");
 
 if (button.id == "acceptBtn-cookie") {
   // Set the cookie to expire at the end of the session
-  document.cookie = "timeCookie = savePref; expires=" + expires + ";path=/";
   const expires = (new Date(Date.now() + 86400 * 1000 * 7));
   expires.toUTCString();
-  document.cookie = "acceptCookieSave = savePref; expires= " + expires + ";path=/";
+  document.cookie = "acceptCookieSave=savePref; expires= " + expires + ";path=/";
 } 
+
 
 // this is a cookie that saves the decline value so that the user does not need to decline till after 7 days 
 if (button.id == "declineBtn-cookie")
-{
-  // decline cookie 
-  const expires = (new Date(Date.now() + 86400 * 1000 * 7));
+{ // decline cookie 
+  const expires2 = (new Date(Date.now() + 86400 * 1000 * 7));
   // 86400 * 1000 = 1 day 
-  expires.toUTCString();
-
-  document.cookie = "declineCookieSave=declineSavePref; expires=" + expires + ";path=/";
+  expires2.toUTCString();
+  document.cookie = "declineCookieSave=declineSavePref; expires=" + expires2 + ";path=/";
 }
 
 else 
 {
   // Delete the cookies because this date has already passed 
-  document.cookie = "timeCookie=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
 // these cookies are google analytic cookies and they are set to false/null 
 ga('set', 'anonymizeIp', true);
 ga('set', 'displayFeaturesTask', null);
