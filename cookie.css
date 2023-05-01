@@ -1,7 +1,7 @@
 /* Google Fonts - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url("http://www.w3.org/2000/svg");
-/* listing it elsewhere besides the header does not make it appear */
+/* listing it elsewhere besides the header does not make it appear, changed the color due to accessibility issues */
 
 .wrapper-cookie {
   position: fixed;
@@ -30,19 +30,19 @@
 /* part of the cookie icon */
 .bi bi-x-lg
 {
- color: blue; 
+ color: darkblue; 
  font-size: 32px;
  text-align: center; 
 }
 /* edits the header for the icon */
 header i {
-  color: #4070f4;
+  color: darkblue;
   font-size: 27px;
   text-align: center;
 }
 /* header change h2 text */
 header h2 {
-  color: #4070f4;
+  color: darkblue;
   font-weight: 400;
   text-align: center;
   margin-right: 50px;
@@ -56,7 +56,7 @@ header h2 {
 }
 /* cookie text and links */
 .data-cookie p a {
-  color: #4070f4;
+  color: darkblue;
   text-decoration: none;
   text-align: center; 
   text-justify: auto;
@@ -80,20 +80,20 @@ header h2 {
   color: #fff;
   padding: 8px 0;
   border-radius: 4px;
-  background: #4070f4;
+  background: darkblue;
   cursor: pointer;
   width: calc(100% / 2 - 10px);
   transition: all 0.2s ease;
 }
-/* accept button color */
+/* accept button color, colors were changed because of contrast (ada issue) */
 .buttons-cookie #acceptBtn-cookie:hover {
   background-color: #434b5e;
 }
 /* decline button color */
 #declineBtn-cookie {
-  border: 2px solid #4070f4;
+  border: 2px solid #434b5e;
   background-color: #fff;
-  color: #4070f4;
+  color: #434b5e;
 }
 
 #declineBtn-cookie:hover {
@@ -103,7 +103,7 @@ header h2 {
 
 .declineBtn-cookie:hover
 {
-    border: 2px solid #034bf1;
+    border: 2px solid #434b5e;
     background-color: #fff;
     color: black; 
 }

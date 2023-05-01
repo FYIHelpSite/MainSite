@@ -360,7 +360,7 @@ span.fr-img-caption.fr-view {
       float: right;
       margin: 5px 0 5px 5px;
       max-width: calc(100% - 5px); }
-/*end-commonstyles library*/@charset "UTF-8";
+/*end-commonstyles library /@charset "UTF-8"; */
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -35986,6 +35986,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
         .u-button-style.u-custom-color-1,
         .u-button-style.u-custom-color-1[class*="u-border-"]
+        /* ada issue */
         {
             color: #ffffff !important;
             background-color: #2777f3 !important;
