@@ -19596,6 +19596,7 @@ a.u-button-style.u-border-2 {
 .u-text.u-border-3,
 a.u-button-style.u-border-3 {
   border-width: 3px;
+  background-color: darkblue !important; 
 }
 .u-shape-svg.u-border-3 {
   stroke-width: 3px;
@@ -35986,10 +35987,10 @@ a.u-link.u-text-hover-grey-90:hover {
 
         .u-button-style.u-custom-color-1,
         .u-button-style.u-custom-color-1[class*="u-border-"]
-        /* ada issue */
+        /* ada issue fixed */
         {
             color: #ffffff !important;
-            background-color: #2777f3 !important;
+            background-color: darkblue !important;
         }
 
         .u-button-style.u-custom-color-1:hover,

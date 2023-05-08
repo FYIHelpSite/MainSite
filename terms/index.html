@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="./../terms.css" media="screen">
     <script class="u-script" type="text/javascript" src="./../jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="./../fyi.js" defer=""></script>
+    <!-- time JS to change year automatically for each page -->
+	<script src="./../time.js" defer></script>
     <meta name="generator" content="FYI">
     <link rel="icon" href="./../images/favicon1.png">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
@@ -18,7 +20,7 @@
     
     
     <script type="application/ld+json">{
-		"@context": "http://schema.org",
+		"@context": "https://schema.org",
 		"@type": "Organization",
 		"name": "FYI - Focus Your Ideas"
 }</script>
@@ -35,9 +37,9 @@
                 <img alt="FYI logo" class="u-image u-image-default lazyload u-image-1" alt="" data-image-width="283" data-image-height="241" data-href="./../index.html" data-page-id="878004943" data-src="./../images/FYILOGO1.svg">
                 <nav class="u-menu u-menu-one-level u-offcanvas u-offcanvas-shift u-menu-1" data-responsive-from="XL">
                   <div class="menu-collapse">
-                    <a class="u-button-style u-custom-left-right-menu-spacing u-custom-top-bottom-menu-spacing u-nav-link u-text-white" href="#" style="padding: 7px 4px; font-size: calc(1em + 14px);">
-                      <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#svg-1abf"></use></svg>
-                      <svg class="u-svg-content" version="1.1" id="svg-1abf" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="https://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+                    <a class="u-button-style u-custom-left-right-menu-spacing u-custom-top-bottom-menu-spacing u-nav-link u-text-white" href="#" style="padding: 7px 4px; font-size: calc(1em + 14px);" alt="This is a hamburger menu to give you options to return to">
+                      <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="https://www.w3.org/1999/xlink" alt="This is a hamburger menu" alt="This is a hamburger menu" xlink:href="#svg-1abf"></use></svg>
+                      <svg class="u-svg-content" version="1.1" id="svg-1abf" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="https://www.w3.org/1999/xlink" alt="This is a hamburger menu" xmlns="https://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
 </g></svg>
                     </a>
                   </div>
@@ -165,7 +167,7 @@
     
     <footer class="u-align-center-sm u-align-center-xs u-black u-border-1 u-border-grey-80 u-border-no-bottom u-border-no-left u-border-no-right u-clearfix u-footer" id="sec-a012"><div class="u-clearfix u-sheet u-sheet-1">
         <a href="./../index.html" data-page-id="878004943" class="u-align-center u-image u-logo u-image-1" data-image-width="283" data-image-height="241" title="Home">
-          <img src="./../images/FYILOGO1-17.svg" class="u-logo-image u-logo-image-1">
+          <img src="./../images/FYILOGO1-17.svg" class="u-logo-image u-logo-image-1" alt="This is the FYI logo to go back to the home page">
         </a>
         <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
@@ -214,7 +216,7 @@
             </div>
           </div>
         </div>
-        <p class="u-align-center u-large-text u-text u-text-default u-text-grey-30 u-text-variant u-text-1"> ©2023 FYI.FYI, Inc.</p>
+        <p class="u-align-center u-large-text u-text u-text-default u-text-grey-30 u-text-variant u-text-1"> &copy; <span id="year"> </span> FYI.FYI, Inc. </p>
       </div></footer>
 
 

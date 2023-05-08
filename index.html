@@ -22,6 +22,8 @@
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
 	<!-- cookies.js -->
     <script src="cookies.js" defer></script>
+	<!-- time JS to change year automatically for each page -->
+	<script src="time.js" defer></script>
 	<!-- fyi.css -->
     <link rel="stylesheet" href="fyi.css" media="screen">
 	<!-- home.css -->
@@ -88,31 +90,31 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
               <div class="u-container-layout u-container-layout-1">
                 <img alt="FYI Logo" class="u-image u-image-default lazyload u-image-1"  data-image-width="283" data-image-height="241" data-href="index.html" data-page-id="878004943" data-src="images/FYILOGO1.svg">
                 <nav class="u-align-left u-menu u-menu-one-level u-offcanvas u-menu-1" data-responsive-from="XL">
-                  <div class="menu-collapse">
-                    <a class="u-button-style u-custom-left-right-menu-spacing u-custom-top-bottom-menu-spacing u-nav-link u-text-white" href="#" title="button style u link custom calculation" style="padding: 7px 4px; font-size: calc(1em + 14px);">
-                      <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#svg-1abf"></use></svg>
-                      <svg class="u-svg-content" version="1.1" id="svg-1abf" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="https://www.w3.org/1999/xlink" xmlns="https://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+                  <div class="menu-collapse" aria-controls= "menu-collapse" aria-expanded="false" aria-hidden="true">
+                    <a class="u-button-style u-custom-left-right-menu-spacing u-custom-top-bottom-menu-spacing u-nav-link u-text-white" href="#" aria-label="Hamburger Menu Options, Home, About Us, The Team, Contact Us, Careers" type="button" role="button" title="This is a hamburger menu" tab-index="0" alt="This is a hamburger menu" style="padding: 7px 4px; font-size: calc(1em + 14px);">
+                      <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="https://www.w3.org/1999/xlink" alt="This is a hamburger menu" tab-index="0" xlink:href="#svg-1abf"></use></svg>
+                      <svg class="u-svg-content" version="1.1" id="svg-1abf" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="https://www.w3.org/1999/xlink" alt="This is a hamburger menu" tab-index="0" xmlns="https://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
 </g></svg>
                     </a>
                   </div>
                   <div class="u-custom-menu u-nav-container">
-                    <ul class="u-custom-font u-heading-font u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html" title="This is a link to the home page" alt="This is a link to the home page" style="padding: 10px 30px;">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./aboutus/" style="padding: 10px 30px;">About Us</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./team/" style="padding: 10px 30px;">The Team</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./contact/" style="padding: 10px 30px;">Contact Us</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./careers/" style="padding: 10px 30px;">Careers</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="https://apps.apple.com/us/app/fyi-me-focus-your-ideas/id1554341467" target="_blank" style="padding: 10px 20px;">Download</a>
+                    <ul class="u-custom-font u-heading-font u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html" aria-label="Home" role="button" type="link" title="This is a button link to the home page" alt="This is a button link to the home page" style="padding: 10px 30px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./aboutus/" style="padding: 10px 30px;" aria-label="About us" role="button" type="link" title="This is a link to the About us page" alt="This is a link to the about us page">About Us</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./team/" style="padding: 10px 30px;" aria-label="Team" role="button" type="link" title="This is a link to the Team page" alt="This is a link to the team page">The Team</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./contact/" style="padding: 10px 30px;" aria-label="Contact us" role="button" type="link" title="This is a link to contact us page" alt="This is a link to the contact us page">Contact Us</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./careers/" style="padding: 10px 30px;" aria-label="Careers Page" role="button" type="link" title="This is a link to the careers page" alt="This is a link to the careers page">Careers</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" aira-label="Download Link" role="button" type="link" href="https://apps.apple.com/us/app/fyi-me-focus-your-ideas/id1554341467" target="_blank" style="padding: 10px 20px;" aria-label="Download the App here" role="link" title="This is the download link for the FYI app" alt="This is the download link for the FYI app">Download</a>
 </li></ul>
                   </div>
                   <div class="u-custom-menu u-nav-container-collapse">
                     <div class="u-black u-container-style u-inner-container-layout u-sidenav">
                       <div class="u-inner-container-layout u-sidenav-overflow">
                         <div class="u-menu-close"></div>
-                        <ul class="u-align-left u-nav u-popupmenu-items u-text-hover-custom-color-1 u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" alt="Home Text" href="./../index.html">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" alt="About us Text" href="./aboutus/">About Us</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" alt="The Team Text" href="./team/">The Team</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" alt="Contact Us Text" href="./contact/">Contact Us</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" alt="Careers Page Text" href="./careers/">Careers</a>
+                        <ul class="u-align-left u-nav u-popupmenu-items u-text-hover-custom-color-1 u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" alt="Home page link" role="button" type="link" href="./../index.html">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" alt="About us Text" href="./aboutus/" aria-label="About us link" role="button" type="link" title="This is a link to the About us page">About Us</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" alt="The Team Text" href="./team/" aria-label="The team link" role="button" type="link" title="This is a link to the Team page" >The Team</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" alt="Contact Us Text" href="./contact/" aria-label="Contact us link" role="button" type="link" title="This is a link to contact us page">Contact Us</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" alt="Careers Page Text" href="./careers/" aria-label="Careers Page link" type="link" role="button" title="This is a link to the careers page" >Careers</a>
 </li></ul>
                       </div>
                     </div>
@@ -130,13 +132,13 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
     <section class="u-align-center u-clearfix u-gradient u-section-1" id="sec-85a1">
       <div class="u-align-left u-clearfix u-sheet u-valign-middle u-sheet-1">
         <div class="u-align-center u-clearfix u-group-elements u-group-elements-1">
-          <img alt="Fire emoji" class="u-align-center u-image u-image-default u-preserve-proportions u-image-1" src="images/ezgif-4-592dcfe940.gif" title="This is the fire Logo" alt="This is a fire logo" data-image-width="200" data-image-height="200">
-          <h1 class="u-align-left u-text u-text-white u-text-1">FYI is the ultimate productivity tool for creatives</h1>
+          <img alt="Fire emoji" class="u-align-center u-image u-image-default u-preserve-proportions u-image-1" src="images/ezgif-4-592dcfe940.gif" aria-label="This is a fire logo" title="This is the fire Logo" alt="This is a fire logo" data-image-width="200" data-image-height="200">
+          <h1 class="u-align-left u-text u-text-white u-text-1" tab-index="0">FYI is the ultimate productivity tool for creatives</h1>
 
 
 		  	<!-- banner cookie start where the cookie banner should show up maybe we should change it to the footer -->
 	
-		<div class="wrapper-cookie">
+		<div class="wrapper-cookie" tabindex="0" placeholder="Cookie" aria-label="Cookie Conset Box" aria-invalid="false" aira-label="Cookie Consent Box" aria-controls="sect1" options="[object Object]">
 			<header>
 			  <i class="bx bx-cookie"></i>
 			  <i class="bi bi-x-lg"></i>
@@ -146,21 +148,22 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 			  <!-- this is the class of the cookie icon we have and we used quick inline css -->
 			  <h2>Cookie Consent</h2>
 			  <h2 style="display:inline-block; position: absolute; right: 0; font-size:1.5rem; line-height:0.75; margin:0; padding: 0;">
-				<button class="button-cookie" id="acceptBtn-cookie" style="height:2rem; padding:0.25rem 0.3rem;">x</button>
+				<button class="button-cookie" id="acceptBtn-cookie" tabindex="0" type="button" role= "button" aria-label="Accept Button Link for Cookies Closes Cookie Box" aria-invalid="false" options="[object Object]" style="height:2rem; padding:0.25rem 0.3rem;">x</button>
 			  </h2>
 			  
 			</header>
 	  
 			<div class="data-cookie">
 			  <p>This website uses cookies. We use cookies to personalize content. We share information about your use of our site with our 
-				analytics partners who may use it with other information that you've provided to them or that they've collected from your use of their services. View our <a href="cookies.html" title="Link to Cookie Policy" alt="Link to the Cookie Policy" target="_blank"> Cookie Policy Here.</a></p>
+				analytics partners who may use it with other information that you've provided to them or that they've collected from your use of their services. View our <a href="cookies.html" title="Link to Cookie Policy" alt="Link to the Cookie Policy" tab-index="0" target="_blank" role="link"> Cookie Policy Here.</a></p>
 			  <!-- example of how link texts need descriptive text such as a href = "cookies here" -->
 			</div>
 	  <!-- doing titles broke the website.. need to see what is the proper way -->
 			<div class="buttons-cookie">
-			  <button class="button-cookie" id="acceptBtn-cookie">Accept</button>
-			  <button class="button-cookie" id="declineBtn-cookie">Decline</button>
+			  <button class="button-cookie" id="acceptBtn-cookie" type="button" role="button" aria-label="Accept Button" alt="This is the accept button" title="This is the accept button" tab-index="0">Accept</button>
+			  <button class="button-cookie" id="declineBtn-cookie" type="button" role="button" aria-label="Decline Button" alt="This is the decline button" title="This is the decline button" tab-index="0" >Decline</button>
 			
+		
 			</div>
 		  </div>
 		  </div>
@@ -245,8 +248,6 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 			//});
 		  };</script>
 
-			
-
 		
 
 			<!-- START whole site in one 1 REVOLUTION SLIDER 6.5.17 --><p class="rs-p-wp-fix"></p>
@@ -254,8 +255,8 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 				<rs-module id="rev_slider_81_1" styles="" data-version="6.5.17">
 					<rs-slides>
 						<rs-slide style="position: absolute;" data-key="rs-124" data-title="Slide" data-in="o:0;" data-out="a:false;">
-							<img src="allinone/assets/transparent.png" alt="This is a slider" title="This is a slider" class="rev-slidebg tp-rs-img" data-no-retina>
-							<!-- alt is important for ADA, titles are useful -->
+							<img src="allinone/assets/transparent.png" alt="This is a slider" title="This is a slider" class="rev-slidebg tp-rs-img" tab-index="0" data-no-retina>
+					
 <!--
 							--><rs-group
 							
@@ -271,6 +272,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 								data-frame_999="x:50,41,41,19;o:0;st:53130;sp:1510;sR:52320;"
 								style="z-index:42;"
 								style="background-color: inherit;"
+						
 							><!--
 								--><rs-layer
 									id="slider-81-slide-124-layer-2" 
@@ -290,6 +292,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 								</rs-layer><!--
 
 								--><rs-layer
+							
 									id="slider-81-slide-124-layer-3" 
 									data-type="text"
 									data-rsp_ch="on"
@@ -332,6 +335,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 									data-frame_1="st:42010;sp:2820;sR:41500;"
 									data-frame_999="o:0;st:w;sR:13170;"
 									style="z-index:41;"
+								
 								><img src="allinone/assets/fire2.gif" alt="This is a picture of a fire emoji" title="This is a fire emoji" class="tp-rs-img" width="100" height="100" data-no-retina> 
 								</rs-layer><!--
 							--></rs-group><!--
@@ -380,6 +384,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 									data-frame_1="st:700;sp:2910;sR:700;"
 									data-frame_999="y:-50,-41,-41,-19;o:0;st:6680;sp:2600;sR:3070;"
 									style="z-index:24;font-family:'Roboto';"
+									tab-index="0"
 								>FYI uses ECDHE and ECDSA to protect your messages and projects, the same cryptography methods used in securing Bitcoin and Ethereum transactions. Your art deserves state-of-the-art protection 
 								</rs-layer><!--
 
@@ -395,6 +400,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 									data-frame_1="st:310;sp:2650;sR:310;"
 									data-frame_999="y:-50,-41,-41,-19;o:0;st:6390;sp:2510;sR:3430;"
 									style="z-index:23;font-family:'Roboto';"
+									tab-index="0"
 								>Protecting your data with the most advanced end-to-end encryption 
 								</rs-layer><!--
 							--></rs-group><!--
@@ -445,6 +451,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 									data-frame_1="st:25000;sp:2910;sR:25000;"
 									data-frame_999="y:-50,-41,-41,-19;o:0;st:37650;sp:2600;sR:9740;"
 									style="z-index:9;font-family:'Roboto';"
+									tab-index="0"
 								>On FYI chat, our default setting is power user. Organize your conversations by contacts or projects. Send messages with no file size limits 
 								</rs-layer><!--
 
@@ -460,6 +467,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 									data-frame_1="st:25000;sp:2650;sR:25000;"
 									data-frame_999="y:-50,-41,-41,-19;o:0;st:37840;sp:2510;sR:10190;"
 									style="z-index:10;font-family:'Roboto';"
+									tab-index="0"
 								>Powerful & Expressive Messaging 
 								</rs-layer><!--
 							--></rs-group><!--
@@ -489,6 +497,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 									data-frame_1="x:3px,2px,2px,1px;st:44950;sp:2860;sR:44440;"
 									data-frame_999="o:0;st:w;sR:10190;"
 									style="z-index:44;font-family:'Roboto';"
+									tab-index="0"
 								>For Your Collaboration 
 								</rs-layer><!--
 
@@ -523,7 +532,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 									
 								><img src="allinone/assets/thumbsup.gif" alt="This is a thumbs up emoji" title="Thumbs up gif" class="tp-rs-img" width="100" height="100" data-no-retina> 
 								</rs-layer><!--
-										ADA Compliance, added alt text for each of the src images in main 
+										ADA Compliance add alt, title, type, role, aria-label, and tab-index 
 								--><rs-layer
 									id="slider-81-slide-124-layer-44" 
 									data-type="shape"
@@ -587,6 +596,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 									data-frame_1="st:16410;sp:2910;sR:16410;"
 									data-frame_999="y:-50,-41,-41,-19;o:0;st:24950;sp:2600;sR:5630;"
 									style="z-index:27;font-family:'Roboto';"
+									tab-index="0"
 								>Share and sync content on calls more easily than any other mobile app. Make one-on-one or group calls with contacts around the world. All files shared on a call are saved in your history, accessible anytime 
 								</rs-layer><!--
 
@@ -602,6 +612,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 									data-frame_1="st:16170;sp:2650;sR:16170;"
 									data-frame_999="y:-50,-41,-41,-19;o:0;st:24750;sp:2510;sR:5930;"
 									style="z-index:28;font-family:'Roboto';"
+									tab-index="0"
 								>Make Content Calls 
 								</rs-layer><!--
 							--></rs-group><!--
@@ -629,6 +640,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 									data-frame_1="st:7290;sp:2910;sR:7290;"
 									data-frame_999="y:-50,-41,-41,-19;o:0;st:15980;sp:2600;sR:5780;"
 									style="z-index:14;font-family:'Roboto';"
+									tab-index="0"
 								>Organize your work into Projects. Store files, manage assets, add team members and guests. Use Projects as your collaborative workspace, a personal archive, or a new way to present your work 
 								</rs-layer><!--
 
@@ -644,6 +656,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 									data-frame_1="st:7040;sp:2650;sR:7040;"
 									data-frame_999="y:-50,-41,-41,-19;o:0;st:15790;sp:2510;sR:6100;"
 									style="z-index:13;font-family:'Roboto';"
+									tab-index="0"
 								>Build Projects 
 								</rs-layer><!--
 
@@ -816,6 +829,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 									data-frame_1="x:3px,2px,2px,1px;st:48410;sp:2860;sR:47900;"
 									data-frame_999="o:0;st:w;sR:6730;"
 									style="z-index:49;font-family:'Roboto';"
+									tab-index="0"
 								>For Your Inspiration 
 								</rs-layer><!--
 
@@ -847,7 +861,9 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 									data-frame_1="st:49000;sp:2810;sR:48490;"
 									data-frame_999="o:0;st:w;sR:6190;"
 									style="z-index:51;"
+									tab-index="0"
 								><img src="allinone/assets/heart.gif" alt="This is a picture of a heart gif" title="This is a heart gif" class="tp-rs-img" width="100" height="100" data-no-retina> 
+								
 								</rs-layer><!--
 							--></rs-group><!--
 
@@ -885,6 +901,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 								data-frame_999="y:-50,-41,-41,-36px;o:0;st:7100;sp:2650;sR:3030;"
 								data-frame_hover="c:#000;bgc:#fff;bor:30px,30px,30px,30px;sp:200;"
 								style="z-index:30;background-color:#2777f3;font-family:'Roboto';text-transform:uppercase;"
+								tab-index="0"
 							>Learn More <i class="fa-chevron-right"></i> 
 							</a><!--
 
@@ -905,6 +922,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 								data-frame_999="y:-50,-41,-41,-19;o:0;st:16290;sp:2650;sR:5090;"
 								data-frame_hover="c:#000;bgc:#fff;bor:30px,30px,30px,30px;sp:200;"
 								style="z-index:31;background-color:#2777f3;font-family:'Roboto';text-transform:uppercase;"
+								tab-index="0"
 							>Learn More <i class="fa-chevron-right"></i> 
 							</a><!--
 
@@ -925,6 +943,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 								data-frame_999="y:-50,-41,-41,-19;o:0;st:37140;sp:2650;sR:8610;"
 								data-frame_hover="c:#000;bgc:#fff;bor:30px,30px,30px,30px;sp:200;"
 								style="z-index:33;background-color:#2777f3;font-family:'Roboto';text-transform:uppercase;"
+								tab-index="0"
 							>Learn More <i class="fa-chevron-right"></i> 
 							</a><!--
 
@@ -945,6 +964,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 								data-frame_999="y:-50,-41,-41,-19;o:0;st:25030;sp:2650;sR:5790;"
 								data-frame_hover="c:#000;bgc:#fff;bor:30px,30px,30px,30px;sp:200;"
 								style="z-index:32;background-color:#2777f3;font-family:'Roboto';text-transform:uppercase;"
+								tab-index="0"
 							>Learn More <i class="fa-chevron-right"></i> 
 							</a><!--
 
@@ -976,6 +996,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 								data-frame_999="o:0;st:w;sR:1800;"
 								data-frame_2="y:center;oX:50%;oY:50%;oZ:0;tp:600;st:53610;sp:2590;sR:12340;"
 								style="z-index:34;font-family:'Roboto';"
+								tab-index="0"
 							>USE FYI 
 							</rs-layer><!--
 
@@ -990,6 +1011,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 								data-frame_1="y:1px,0px,0px,0px;st:54860;sp:2250;sR:54860;"
 								data-frame_999="o:0;st:w;sR:890;"
 								style="z-index:35;font-family:'Roboto';"
+								tab-index="0"
 							>TO FOCUS YOUR IDEAS 
 							</rs-layer><!--
 -->						</rs-slide>
@@ -1073,9 +1095,9 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
             </video>
           </div>
         </div>
-        <img class="u-align-center-xs u-image u-image-default u-preserve-proportions u-image-1" src="images/iphone-for-videos-gray-506x1024.webp" alt="This is a iphone" data-image-width="506" data-image-height="1024">
+        <img class="u-align-center-xs u-image u-image-default u-preserve-proportions u-image-1" src="images/iphone-for-videos-gray-506x1024.webp" alt="This is an iphone" data-image-width="506" data-image-height="1024">
         <h1 class="u-text u-text-1">Protecting your data with the most advanced end-to-end encryption</h1>
-        <p class="u-custom-font u-heading-font u-text u-text-2"> FYI uses ECDHE and ECDSA to protect your messages and projects, the same cryptography methods used in securing Bitcoin and Ethereum transactions. Your art deserves state-of-the-art protection</p>
+        <p class="u-custom-font u-heading-font u-text u-text-2" tab-index="0"> FYI uses ECDHE and ECDSA to protect your messages and projects, the same cryptography methods used in securing Bitcoin and Ethereum transactions. Your art deserves state-of-the-art protection</p>
         <a href="encryption/" title="The Encryption Link" alt="This is an Encryption Link" data-page-id="65818436" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-grey-75 u-radius-14 u-btn-1">learn more</a>
 		<!-- changed the title of these two incase the app breaks, changed it back, contrast issue -->
       </div>
@@ -1085,9 +1107,9 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
         <img class="u-align-center-xs u-image u-image-round u-preserve-proportions u-radius-15 u-image-1" src="images/locker5-min.png" alt="This is a locker image" data-image-width="1128" data-image-height="2436">
         <img class="u-align-center-xs u-image u-image-round u-preserve-proportions u-radius-13 u-image-2" src="images/iphone-for-videos-gray-506x1024.webp" alt="This is an iphone image" data-image-width="506" data-image-height="1024">
         <h1 class="u-text u-text-1"> Build Projects</h1>
-        <p class="u-custom-font u-heading-font u-text u-text-2"> Organize your work into Projects. Store files, manage assets, add team members and guests. Use Projects as your collaborative workspace, a personal archive, or a new way to present your work</p>
-        <a href="projects/" title="Project Link" alt="This is a project link" data-page-id="45023455" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-grey-75 u-radius-14 u-btn-1">learn more</a>
-        <img class="u-image u-image-default u-preserve-proportions u-image-3" src="images/p1-300x291.png" alt="Black Eyed Peas Album Art Image" data-image-width="300" data-image-height="291" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="250">
+        <p class="u-custom-font u-heading-font u-text u-text-2" tab-index="0"> Organize your work into Projects. Store files, manage assets, add team members and guests. Use Projects as your collaborative workspace, a personal archive, or a new way to present your work</p>
+        <a href="projects/" title="Project Link" alt="This is a project link" aria-label="This is a project link" data-page-id="45023455" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-grey-75 u-radius-14 u-btn-1">learn more</a>
+        <img class="u-image u-image-default u-preserve-proportions u-image-3" src="images/p1-300x291.png" alt="Black Eyed Peas Album Art Image" aidata-image-width="300" data-image-height="291" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="250">
         <img class="u-image u-image-default u-preserve-proportions u-image-4" src="images/p2-300x291.png" alt="Xupermask New Merch T-Shirt Image" data-image-width="300" data-image-height="291" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="500">
         <img class="u-image u-image-default u-preserve-proportions u-image-5" src="images/p4-300x291.png" alt="Footwear Collection Image" data-image-width="300" data-image-height="291" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="250">
         <img class="u-image u-image-default u-preserve-proportions u-image-6" src="images/p3-300x291.png" alt="Brand Identity Bike Image" data-image-width="300" data-image-height="291" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="750">
@@ -1123,7 +1145,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
         </div>
         <img class="u-align-center-xs u-image u-image-default u-preserve-proportions u-image-1" src="images/iphone-for-videos-gray-506x1024.webp" alt="" data-image-width="506" data-image-height="1024">
         <h1 class="u-text u-text-1"> Powerful &amp; Expressive Messaging</h1>
-        <p class="u-custom-font u-heading-font u-text u-text-2"> On FYI chat, our default setting is power user. Organize your conversations by contacts or projects. Send messages with no file size limits</p>
+        <p class="u-custom-font u-heading-font u-text u-text-2" tab-index="0" alt="On FYI our default setting is power user" > On FYI chat, our default setting is power user. Organize your conversations by contacts or projects. Send messages with no file size limits</p>
         <a href="chat/" data-page-id="223806451" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-grey-75 u-radius-14 u-btn-1">learn more</a>
       </div>
     </section>
@@ -1569,10 +1591,10 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
     
     <!-- begin footer -->
     
- <footer class="u-align-center-sm u-align-center-xs u-black u-border-1 u-border-grey-80 u-border-no-bottom u-border-no-left u-border-no-right u-clearfix u-footer" id="sec-a012"><div class="u-clearfix u-sheet u-sheet-1">
+ <footer class="u-align-center-sm u-align-center-xs u-black u-border-1 u-border-grey-80 u-border-no-bottom u-border-no-left u-border-no-right u-clearfix u-footer" role="navigation" aria-label="Footer Navigation" sec-a012><div class="u-clearfix u-sheet u-sheet-1">
 	<!-- originally it was index..html but did not work on local -->
-        <a href="index.html" data-page-id="878004943" class="u-align-center u-image u-logo u-image-1" data-image-width="283" data-image-height="241" title="Home">
-          <img alt="FYI logo" src="images/FYILOGO1.svg" alt="This is the FYI logo" title="This is the FYI logo" class="u-logo-image u-logo-image-1">
+        <a href="index.html" data-page-id="878004943" class="u-align-center u-image u-logo u-image-1" data-image-width="283" data-image-height="241" alt="Home" title="Home">
+          <img alt="FYI logo" src="images/FYILOGO1.svg" alt="This is the FYI logo" title="This is the FYI logo" aria-label="This is the FYI logo" role="button" type="link" class="u-logo-image u-logo-image-1">
         </a>
 
 		
@@ -1592,28 +1614,28 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
                       </a>
                     </div>
                     <div class="u-custom-menu u-nav-container">
-                      <ul class="u-custom-font u-heading-font u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="./../index.html" target="_blank" style="padding: 10px 20px;">Home</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="https://fyihelp.zendesk.com/hc/en-us" target="_blank" style="padding: 10px 20px;">Contact Us</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="./aboutus/" target="_blank" style="padding: 10px 20px;">About Us</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="./team/" target="_blank" style="padding: 10px 20px;">The Team</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="./terms/" target="_blank" style="padding: 10px 20px;">Terms &amp; Conditions</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="./privacy/" target="_blank" style="padding: 10px 20px;">Privacy Policy</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="./careers/" target="_blank" style="padding: 10px 20px;">Careers</a>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="https://apps.apple.com/us/app/fyi-me-focus-your-ideas/id1554341467" target="_blank" style="padding: 10px 20px;">Download</a>
+                      <ul class="u-custom-font u-heading-font u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="./../index.html" target="_blank" aria-label="Home Link" role="button" type="link" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="https://fyihelp.zendesk.com/hc/en-us" target="_blank" aria-label="Link to Contact Us page" role="button" type="link" style="padding: 10px 20px;">Contact Us</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="./aboutus/" target="_blank" style="padding: 10px 20px;" aria-label="Link to About us" role="button" type="link">About Us</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="./team/" target="_blank" style="padding: 10px 20px;" aria-label="Link to The Team" role="button" type="link">The Team</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="./terms/" target="_blank" style="padding: 10px 20px;" aria-label="Link to Terms and Conditions" role="button" type="link">Terms &amp; Conditions</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="./privacy/" target="_blank" style="padding: 10px 20px;" aria-label="Privacy Policy Link" role="button" type="link">Privacy Policy</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="./careers/" target="_blank" style="padding: 10px 20px;" aria-label="Careers Link" role="button" type="link">Careers</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="https://apps.apple.com/us/app/fyi-me-focus-your-ideas/id1554341467" target="_blank" style="padding: 10px 20px;"aria-label="Link to download the app" role="button" type="link">Download</a>
 </li></ul>
                     </div>
                     <div class="u-custom-menu u-nav-container-collapse">
                       <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
                         <div class="u-inner-container-layout u-sidenav-overflow">
                           <div class="u-menu-close"></div>
-                          <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./../index.html">Home</a>
+                          <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./../index.html" aria-label="Back to homepage link" role="button">Home</a>
 
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./contact/" title="Contact us link" alt="Contact us link">Contact Us</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./aboutus/" title="About us link" alt="About us Link">About Us</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./team/" title="The Team Link" alt="The team link">The Team</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./terms/" title="Terms and Conditions Link" alt="Terms and Conditions Link">Terms &amp; Conditions</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./privacy/" title="Privacy Policy Link" alt="Privacy Policy Link">Privacy Policy</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./careers/" title="Careers Link" alt="Careers Link" >Careers</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./contact/" type="link" title="Contact us link" alt="Contact us link" aria-label="Contact us link" role="button">Contact Us</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./aboutus/" type="link" title="About us link" alt="About us Link" aria-label="About us" role="button">About Us</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./team/" type="link" title="The Team Link" alt="The team link" aria-label="The Team Link" role="button">The Team</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./terms/" type="link" title="Terms and Conditions Link" alt="Terms and Conditions Link" aria-label="Terms and Conditions link" role="button">Terms &amp; Conditions</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./privacy/" type="link" title="Privacy Policy Link" alt="Privacy Policy Link"aria-label="Privacy Policy" role="button">Privacy Policy</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./careers/" type="link" title="Careers Link" alt="Careers Link" aria-label="Careers Link" role="button">Careers</a>
 </li></ul>
                         </div>
                       </div>
@@ -1626,7 +1648,9 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
           </div>
         </div>
 		
-        <p class="u-align-center u-large-text u-text u-text-default u-text-grey-30 u-text-variant u-text-1"> ©2023 FYI.FYI, Inc. </p>
+        <p class="u-align-center u-large-text u-text u-text-default u-text-grey-30 u-text-variant u-text-1"> 
+			&copy; <span id="year"> </span> FYI.FYI, Inc. </p>
+			<!-- this allows for the year to change without manually editing every page -->
       </div></footer>
   </body>
 </html>
