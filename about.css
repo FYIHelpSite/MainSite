@@ -42,6 +42,19 @@
   margin: -792px auto 60px;
 }
 
+/* skip content */
+.skip-link {
+  position: relative; 
+  top: -40px;
+  left: 0;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+
 @media (max-width: 1199px) {
   .u-section-1 .u-sheet-1 {
     min-height: 1106px;

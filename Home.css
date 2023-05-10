@@ -6,6 +6,17 @@
   min-height: 100vh;
 }
 
+/* skip content */
+.skip-link {
+  position: relative;
+  top: -40px;
+  left: 0;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
 .u-section-1 .u-group-elements-1 {
   width: 800px;
   min-height: 317px;

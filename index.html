@@ -52,6 +52,16 @@ The side hamburger menu could be changed and instead shown as a row
 The menu itself could have a better looking font 
 Probably needs some cookies to be enabled somehow I know that cookies are through a separate platform like how discord has it, they use “one trust cookies” and this is done through the javascript code and probably links to an API where it uses this data, then the HTML/CSS is a specific item that pops up to show the user like hey.. Accept the cookies or not 
 Not sure why but the hamburger menu side logo takes a while to load in, not a huge issue
+
+for next time get access to the new site and implement all new ada changes
+ask how I can get a design file placed on the site and use the rest as a sandbox to learn
+add the cookies and cookie banner
+then also figure out how they are hosted (ie login for AWS host)
+the site has a better access for tabs so that will be easier for roles and types 
+mike is not here I think so I will need to catch up with him later about my access to the site 
+
+will need to make a new github repo and repeat the visual studio code process 
+
 -->
 <link rel="stylesheet" type="text/css" href="allinone/css/rs6.css">
 <!-- REVOLUTION LAYERS STYLES -->
@@ -138,7 +148,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 
 		  	<!-- banner cookie start where the cookie banner should show up maybe we should change it to the footer -->
 	
-		<div class="wrapper-cookie" tabindex="0" placeholder="Cookie" aria-label="Cookie Conset Box" aria-invalid="false" aira-label="Cookie Consent Box" aria-controls="sect1" options="[object Object]">
+		<div class="wrapper-cookie" tabindex="0" placeholder="Cookie" aria-label="Cookie Conset Box" aria-invalid="false" aira-label="Cookie Consent Box" aria-controls="sect1">
 			<header>
 			  <i class="bx bx-cookie"></i>
 			  <i class="bi bi-x-lg"></i>
@@ -148,7 +158,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 			  <!-- this is the class of the cookie icon we have and we used quick inline css -->
 			  <h2>Cookie Consent</h2>
 			  <h2 style="display:inline-block; position: absolute; right: 0; font-size:1.5rem; line-height:0.75; margin:0; padding: 0;">
-				<button class="button-cookie" id="acceptBtn-cookie" tabindex="0" type="button" role= "button" aria-label="Accept Button Link for Cookies Closes Cookie Box" aria-invalid="false" options="[object Object]" style="height:2rem; padding:0.25rem 0.3rem;">x</button>
+				<button class="button-cookie" id="acceptBtn-cookie" tabindex="0" type="button" role= "button" aria-label="Accept Button Link for Cookies Closes Cookie Box" aria-invalid="false" style="height:2rem; padding:0.25rem 0.3rem;">x</button>
 			  </h2>
 			  
 			</header>
@@ -160,8 +170,8 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 			</div>
 	  <!-- doing titles broke the website.. need to see what is the proper way -->
 			<div class="buttons-cookie">
-			  <button class="button-cookie" id="acceptBtn-cookie" type="button" role="button" aria-label="Accept Button" alt="This is the accept button" title="This is the accept button" tab-index="0">Accept</button>
-			  <button class="button-cookie" id="declineBtn-cookie" type="button" role="button" aria-label="Decline Button" alt="This is the decline button" title="This is the decline button" tab-index="0" >Decline</button>
+			  <button class="button-cookie" id="acceptBtn-cookie" type="link" role="button" aria-label="Accept Button" alt="This is the accept button" title="This is the accept button" tab-index="0">Accept</button>
+			  <button class="button-cookie" id="declineBtn-cookie" type="link" role="button" aria-label="Decline Button" alt="This is the decline button" title="This is the decline button" tab-index="0" >Decline</button>
 			
 		
 			</div>
@@ -171,6 +181,8 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 
         </div>
       </div>
+
+	  
 	  
     </section>
     <section class="u-black u-clearfix u-hidden-xs u-section-2" id="sec-f3f8">
@@ -597,6 +609,8 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 									data-frame_999="y:-50,-41,-41,-19;o:0;st:24950;sp:2600;sR:5630;"
 									style="z-index:27;font-family:'Roboto';"
 									tab-index="0"
+									alt="Share and sync content on calls more easily"
+									aria-label="Share and sync content on calls more easily"
 								>Share and sync content on calls more easily than any other mobile app. Make one-on-one or group calls with contacts around the world. All files shared on a call are saved in your history, accessible anytime 
 								</rs-layer><!--
 
@@ -641,6 +655,8 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
 									data-frame_999="y:-50,-41,-41,-19;o:0;st:15980;sp:2600;sR:5780;"
 									style="z-index:14;font-family:'Roboto';"
 									tab-index="0"
+									alt="Organize your work into Projects" 
+									aria-label="Organzie your work projects image of an iphone where you can add team members and manage guests. "
 								>Organize your work into Projects. Store files, manage assets, add team members and guests. Use Projects as your collaborative workspace, a personal archive, or a new way to present your work 
 								</rs-layer><!--
 
@@ -1098,7 +1114,7 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
         <img class="u-align-center-xs u-image u-image-default u-preserve-proportions u-image-1" src="images/iphone-for-videos-gray-506x1024.webp" alt="This is an iphone" data-image-width="506" data-image-height="1024">
         <h1 class="u-text u-text-1">Protecting your data with the most advanced end-to-end encryption</h1>
         <p class="u-custom-font u-heading-font u-text u-text-2" tab-index="0"> FYI uses ECDHE and ECDSA to protect your messages and projects, the same cryptography methods used in securing Bitcoin and Ethereum transactions. Your art deserves state-of-the-art protection</p>
-        <a href="encryption/" title="The Encryption Link" alt="This is an Encryption Link" data-page-id="65818436" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-grey-75 u-radius-14 u-btn-1">learn more</a>
+        <a href="encryption/" title="The Encryption Link" alt="Read More about Encryption" tab-index="0" data-page-id="65818436" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-grey-75 u-radius-14 u-btn-1">learn more</a>
 		<!-- changed the title of these two incase the app breaks, changed it back, contrast issue -->
       </div>
     </section>
@@ -1630,12 +1646,12 @@ Not sure why but the hamburger menu side logo takes a while to load in, not a hu
                           <div class="u-menu-close"></div>
                           <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./../index.html" aria-label="Back to homepage link" role="button">Home</a>
 
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./contact/" type="link" title="Contact us link" alt="Contact us link" aria-label="Contact us link" role="button">Contact Us</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./aboutus/" type="link" title="About us link" alt="About us Link" aria-label="About us" role="button">About Us</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./team/" type="link" title="The Team Link" alt="The team link" aria-label="The Team Link" role="button">The Team</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./terms/" type="link" title="Terms and Conditions Link" alt="Terms and Conditions Link" aria-label="Terms and Conditions link" role="button">Terms &amp; Conditions</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./privacy/" type="link" title="Privacy Policy Link" alt="Privacy Policy Link"aria-label="Privacy Policy" role="button">Privacy Policy</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./careers/" type="link" title="Careers Link" alt="Careers Link" aria-label="Careers Link" role="button">Careers</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./contact/" type="link" title="Contact us link" alt="Contact us link" aria-label="Link to the Contact us page" role="button">Contact Us</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./aboutus/" type="link" title="About us link" alt="About us Link" aria-label="Link to the about us page" role="button">About Us</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./team/" type="link" title="The Team Link" alt="The team link" aria-label="Link to The Team page" role="button">The Team</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./terms/" type="link" title="Terms and Conditions Link" alt="Terms and Conditions Link" aria-label="Link to the Terms and Conditions page" role="button">Terms &amp; Conditions</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./privacy/" type="link" title="Privacy Policy Link" alt="Privacy Policy Link"aria-label="Link to our Privacy Policy" role="button">Privacy Policy</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./careers/" type="link" title="Careers Link" alt="Careers Link" aria-label="Link to our Careers page" role="button">Careers</a>
 </li></ul>
                         </div>
                       </div>

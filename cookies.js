@@ -54,6 +54,7 @@ if (button.id == "acceptBtn-cookie") {
 // this is a cookie that saves the decline value so that the user does not need to decline till after 7 days 
 if (button.id == "declineBtn-cookie")
 { // decline cookie 
+  //const expires2 = (new Date(Date.now() + 86400 * 1000 * 7));
   const expires2 = (new Date(Date.now() + 86400 * 1000 * 7));
   // 86400 * 1000 = 1 day 
   expires2.toUTCString();
