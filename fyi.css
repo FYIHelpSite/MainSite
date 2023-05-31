@@ -18173,7 +18173,7 @@ a.pswp__share--download:hover {
     transform: translate3d(0, 0, 0);
   }
   to {
-    visibility: hidden;
+    visibility: hidden; 
     transform: translate3d(0, var(--animation-slide_out_up-translate_y), 0);
   }
 }

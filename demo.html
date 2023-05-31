@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+  <head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="FYI - Focus Your Ideas" />
+    <meta name="keywords" content="App for creative teams, Creative messenger app, Creative productivity tool, Productivity app for creative teams, Productivity tool for creative teams, Messenger app for creative teams, Secure messaging app for creatives, Secure messaging platform for creative teams, Cloud storage for multimedia files, Creative workspace online, Create virtual workspace, FYI, for your information, focus your ideas, chat, projects, messaging, cloud, storage, creative, visual, workspace, productivity ">
+    <meta property="og:image" content="./../images/logofyi.jpg" />
+    <meta name="twitter:title" content="Messaging - FYI">
+    <meta name="twitter:description" content="FYI is a collaborative communication messaging platform for the creative community to manage their digital assets. For the ones who drive culture forward">
+    <meta name="twitter:image" content="./../images/logofyi.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="description" content="FYI is the ultimate productivity tool for creatives">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>My Demo Site</title>
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- boostrap css -->
+    <link rel="stylesheet" href="bootstrap.css" media="screen">
+	<!-- test x for banner -->
+	<link href="https://www.w3.org/2000/svg" rel="stylesheet"/>
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+	<!-- Boxicon complete -->
+	<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+	<!-- cookies.js -->
+    <script src="cookies.js" defer></script>
+	<!-- time JS to change year automatically for each page -->
+	<script src="time.js" defer></script>
+	<!-- fyi.css -->
+    <link rel="stylesheet" href="fyi.css" media="screen">
+	<!-- home.css -->
+	<link rel="stylesheet" href="Home.css" media="screen">
+	<!-- cookies.css -->
+	<!-- <link rel="stylesheet" type="text/css" href="cookie.css"> -->
+	<link rel="stylesheet" type="text/css" href="cookie.css">
+	<!-- fyi .js -->
+    <script class="u-script" type="text/javascript" src="fyi.js" defer=""></script>
+	<!-- defer is important do not remove -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- boostrap -->
+    <meta name="generator" content="FYI">
+    
+    <link rel="icon" href="images/favicon1.png">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"> 
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400&display=swap" rel="stylesheet" property="stylesheet" media="all" type="text/css" >
+
+			
+			<!-- REVOLUTION STYLE SHEETS -->
+			<link rel="stylesheet" type="text/css" href="usefyi/css/rs6.css">
+<!-- things to edit as per documentation:
+Non responsive footer, should be shown as a column rather than kept as a role when px are changed, use @ media query 
+The learn more button on the body is too close to the text, should use some padding to align it better
+The text in “powerful and expressive” is overlapped with the p tag 
+The side hamburger menu could be changed and instead shown as a row
+The menu itself could have a better looking font 
+Probably needs some cookies to be enabled somehow I know that cookies are through a separate platform like how discord has it, they use “one trust cookies” and this is done through the javascript code and probably links to an API where it uses this data, then the HTML/CSS is a specific item that pops up to show the user like hey.. Accept the cookies or not 
+Not sure why but the hamburger menu side logo takes a while to load in, not a huge issue
+
+for next time get access to the new site and implement all new ada changes
+ask how I can get a design file placed on the site and use the rest as a sandbox to learn
+add the cookies and cookie banner
+then also figure out how they are hosted (ie login for AWS host)
+the site has a better access for tabs so that will be easier for roles and types 
+mike is not here I think so I will need to catch up with him later about my access to the site 
+
+will need to make a new github repo and repeat the visual studio code process 
+
+-->
+<link rel="stylesheet" type="text/css" href="allinone/css/rs6.css">
+<!-- REVOLUTION LAYERS STYLES -->
+
+<!-- test commit, all code is on github just commit from within vs code and merge/sync changes -->
+    <script type="application/ld+json">{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"name": "FYI - Focus Your Ideas",
+		"logo": "images/FYILOGO1.svg"
+}</script>
+    <meta name="theme-color" content="#2777f3">
+    <meta property="og:title" content="FYI - Focus Your Ideas">
+    <meta property="og:description" content="FYI is a collaborative communication messaging platform for the creative community to manage their digital assets. For the ones who drive culture forward">
+    <meta property="og:type" content="website">
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-229529853-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-229529853-1');
+</script>
+
+  </head>
+
+
+  
+  <body data-home-page="index.html" data-home-page-title="Home" alt="This is back to home" class="u-body u-custom-color-1 u-overlap u-overlap-transparent u-xl-mode"><header class="u-align-left u-clearfix u-custom-color-1 u-header u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-header" id="sec-9afa"><div class="u-clearfix u-expanded-width u-gutter-0 u-layout-custom-sm u-layout-custom-xs u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+			
+
+                    
+</g></svg>
+                    </a>
+                  </div>
+ 
+<!-- For ADA Compliance: Aria-label, alt, title, role, type, unique classes, href -->
+                  </div>
+
+                      </div>
+                    </div>
+                    <div class="u-black u-menu-overlay u-opacity u-opacity-25"></div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div></header>
+	  <!-- start navbar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:black;">
+        <a class="navbar-brand" href="#">Focus Your Ideas </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Terms and Conditions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Download</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+          </ul>
+          <span class="navbar-text">
+    <img alt="fyi logo" class="u-align-center u-image u-image-default u-preserve-proportions u-image-1" src="allinone/assets/fire2.gif">
+          </span>
+        </div>
+      </nav>
+
+    <section class="u-align-center u-clearfix u-gradient u-section-1" id="sec-85a1">
+      <div class="u-align-left u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-align-center u-clearfix u-group-elements u-group-elements-1">
+          <img alt="app emoji" class="u-align-center u-image u-image-default u-preserve-proportions u-image-1" src="allinone/assets/web-development-android-app-store-technology-play-removebg-preview (1).png" aria-label="This is an app logo" title="This is an app Logo" alt="This is a fire logo" data-image-width="200" data-image-height="200">
+          <h1 class="u-align-left u-text u-text-white u-text-1" tabindex="0">Focus Your Ideas with FYI </h1>
+
+
+		  	<!-- banner cookie start where the cookie banner should show up maybe we should change it to the footer -->
+	
+		<div class="wrapper-cookie" tabindex="0" placeholder="Cookie" aria-label="Cookie Conset Box" aria-invalid="false" title="Cookie consent box" aria-controls="sect1">
+			<header>
+			  <i class="bx bx-cookie"></i>
+			  <!-- CSS for x click on banner -->
+			  <!-- this is the class of the cookie icon we have and we used quick inline css -->
+			  <h2>Cookie Consent</h2>
+			  <h2 style="display:inline-block; position: absolute; right: 0; font-size:1.5rem; height: 2; margin:0; padding: 0; color: darkblue !important;">
+			<!-- changing it to a or input does not work as intended, looks fine so far -->
+				<button class="button-cookie" id="acceptBtn-cookie" tabindex="0" type="button" role="button" aria-label="Accept Button Link for Cookies Closes Cookie Box" aria-invalid="false" title="Accept button link Clicks out of box" alt="Accept button link clicks out of box" style="height:2rem; padding:0.01rem 0.01rem; color: darkblue !important;"> 
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAATZJREFUSEvtl2ENAjEMhR8OcAA4QAIoQAIgASdIAAc4AAfgAHAACiAvuSZL6W3L1svdD5aQy7HRr31rtzJCT2PUExeDA08BTJzUeAO4aVtWxCcAKyeomDkA2IY2NZiR3p2hYm4G4CEvGrwAcO4IvARw+YNFgZTUz0i2x+Zov1jqI4ANAGboWuVBbE6WFoGZjczKsDwELlCZ41rrDCgC06iuRb5zUAXLIV0cxWALHhq3tiCcrwK3wVPQquQS7/WeijM64VyltqA5+1sVsYZS3o86/GOSF+3xqyknPrW0YbaPm0uGTzepeafS671xgBC+ay6YuQGtkpo/ZsRWNKm5anBLMFlfF+1xluXEomGCmRhXj/AMG9HWh+u7aPZ+Dp62vppNHz8eg5WQ1d56wJI2BvdPIulx7YIvKrdUH5koh6cAAAAASUVORK5CYII="
+					aria-label="This is an image of a cookie close button" title="This is an image of a close button" type="button" role="link"  /> 
+					
+				</i> 
+			</button>
+			  </h2>
+			  
+			</header>
+	  
+			<div class="data-cookie">
+			  <p>This website uses cookies. We use cookies to personalize content. We share information about your use of our site with our 
+				analytics partners who may use it with other information that you've provided to them or that they've collected from your use of their services. View our <a href="cookies.html" title="Link to Cookie Policy" alt="Link to the Cookie Policy" tabindex="0" target="_blank" role="link"> Cookie Policy Here.</a></p>
+			  <!-- example of how link texts need descriptive text such as a href = "cookies here" -->
+			</div>
+	  			<!-- doing titles broke the website.. need to see what is the proper way -->
+			<div class="buttons-cookie">
+			  <button class="button-cookie" id="acceptBtn-cookie" type="link" role="button" aria-label="Accept Button for cookies" alt="Click this to accept cookies" title="This is the accept button" tabindex="0">Accept</button>
+			  <button class="button-cookie" id="declineBtn-cookie" type="link" role="button" aria-label="Decline Button for cookies" alt="Click this to decline cookies" title="This is the decline button" tabindex="0" >Decline</button>
+			
+		
+			</div>
+		  </div>
+		  </div>
+	<!-- cookie banner end -->
+
+        </div>
+      </div>
+
+	  
+      <!-- begin boostrap code auto responsive -->
+	  
+    </section>
+    <section class="u-black u-clearfix u-hidden-xs u-section-2" id="sec-f3f8">
+      <div class="u-align-left u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-clearfix u-custom-html u-expanded-width u-hidden-sm u-hidden-xs u-custom-html-1">
+
+        
+
+				
+	
+			<!-- END REVOLUTION SLIDER -->
+
+				<script>
+					var	tpj = jQuery;
+					if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+					if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+					RS_MODULES.modules["revslider811"] = {once: RS_MODULES.modules["revslider811"]!==undefined ? RS_MODULES.modules["revslider811"].once : undefined, init:function() {
+						window.revapi81 = window.revapi81===undefined || window.revapi81===null || window.revapi81.length===0  ? document.getElementById("rev_slider_81_1") : window.revapi81;
+						if(window.revapi81 === null || window.revapi81 === undefined || window.revapi81.length==0) { window.revapi81initTry = window.revapi81initTry ===undefined ? 0 : window.revapi81initTry+1; if (window.revapi81initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider811"].init()}); return;}
+						window.revapi81 = jQuery(window.revapi81);
+						if(window.revapi81.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_81_1"); return;}
+						revapi81.revolutionInit({
+								revapi:"revapi81",
+								DPR:"dpr",
+								sliderLayout:"fullscreen",
+								duration:"58000ms",
+								visibilityLevels:"1240,1024,1024,480",
+								gridwidth:"1240,1024,1024,480",
+								gridheight:"900,768,768,800",
+								perspective:600,
+								perspectiveType:"global",
+								editorheight:"900,768,584,800",
+								responsiveLevels:"1240,1024,1024,480",
+								progressBar:{disableProgressBar:true},
+								navigation: {
+									onHoverStop:false
+								},
+								scrolleffect: {
+									set:true,
+									multiplicator:1.3,
+									multiplicator_layers:1.3
+								},
+								sbtimeline: {
+									set:true,
+									fixed:true,
+									fixStart:"1ms",
+									fixEnd:"58000ms"
+								},
+								viewPort: {
+									global:false,
+									globalDist:"-200px",
+									enable:false
+								},
+								fallbacks: {
+									allowHTML5AutoPlayOnAndroid:true
+								},
+						});
+						
+					}} // End of RevInitScript
+					if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
+				</script>
+
+
+
+<!-- END HTML allinone -->	
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="allinone/assets/image_6487327 (5).JPG" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5> Explore FYI with your own personal AI Pilot </h5>
+            <p> Create planners, make calls, listen to music, do it all with FYI </p>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="allinone/assets/image_6487327 (6).JPG" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="allinone/assets/image_6487327 (7).JPG" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="container pt-4">
+	<!-- about -->
+	<div class="row">
+
+	</div>
+  </div>
+			
+			
+			
+		</div>
+      </div>
+    </section>
+    <section class="u-black u-clearfix u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xl u-section-3" id="sec-6b3f">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-align-center-xs u-preserve-proportions u-uploaded-video u-video u-video-contain video-mask u-video-1">
+          <div class="embed-responsive">
+            <video class="embed-responsive-item" data-autoplay="1" loop="" muted="" autoplay="autoplay" playsinline="">
+              <source alt="end-to-end encryption app video" src="allinone/assets/encryption-3.mp4" type="video/mp4">
+              <p>Your browser does not support HTML5 video.</p>
+            </video>
+          </div>
+        </div>
+        <img class="u-align-center-xs u-image u-image-default u-preserve-proportions u-image-1" src="images/iphone-for-videos-gray-506x1024.webp" alt="This is an iphone" data-image-width="506" data-image-height="1024">
+        <h1 class="u-text u-text-1">Protecting your data with the most advanced end-to-end encryption</h1>
+        <p class="u-custom-font u-heading-font u-text u-text-2" tabindex="0"> FYI uses ECDHE and ECDSA to protect your messages and projects, the same cryptography methods used in securing Bitcoin and Ethereum transactions. Your art deserves state-of-the-art protection</p>
+        <a href="encryption/" title="The Encryption Link" alt="Read More about Encryption" tabindex="0" data-page-id="65818436" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-grey-75 u-radius-14 u-btn-1">learn more</a>
+		<!-- changed the title of these two incase the app breaks, changed it back, contrast issue -->
+      </div>
+    </section>
+    <section class="u-black u-clearfix u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xl u-section-4" id="carousel_2504">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <img class="u-align-center-xs u-image u-image-round u-preserve-proportions u-radius-15 u-image-1" src="images/locker5-min.png" alt="This is a locker image" data-image-width="1128" data-image-height="2436">
+        <img class="u-align-center-xs u-image u-image-round u-preserve-proportions u-radius-13 u-image-2" src="images/iphone-for-videos-gray-506x1024.webp" alt="This is an iphone image" data-image-width="506" data-image-height="1024">
+        <h1 class="u-text u-text-1"> Build Projects</h1>
+        <p class="u-custom-font u-heading-font u-text u-text-2" tabindex="0"> Organize your work into Projects. Store files, manage assets, add team members and guests. Use Projects as your collaborative workspace, a personal archive, or a new way to present your work</p>
+        <a href="projects/" title="Project Link" alt="This is a project link" aria-label="This is a link to the projects tab" data-page-id="45023455" type="link" role="button" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-grey-75 u-radius-14 u-btn-1">learn more</a>
+        <img class="u-image u-image-default u-preserve-proportions u-image-3" src="images/p1-300x291.png" alt="Black Eyed Peas Album Art Image" aidata-image-width="300" data-image-height="291" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="250">
+        <img class="u-image u-image-default u-preserve-proportions u-image-4" src="images/p2-300x291.png" alt="Xupermask New Merch T-Shirt Image" data-image-width="300" data-image-height="291" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="500">
+        <img class="u-image u-image-default u-preserve-proportions u-image-5" src="images/p4-300x291.png" alt="Footwear Collection Image" data-image-width="300" data-image-height="291" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="250">
+        <img class="u-image u-image-default u-preserve-proportions u-image-6" src="images/p3-300x291.png" alt="Brand Identity Bike Image" data-image-width="300" data-image-height="291" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="750">
+        <img class="u-image u-image-default u-preserve-proportions u-image-7" src="images/p5-300x291.png" alt="Vinyl Toys Image" data-image-width="300" data-image-height="291" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="250">
+        <img class="u-image u-image-default u-preserve-proportions u-image-8" src="images/p6-300x291.png" alt="campaign photoshoot image" data-image-width="300" data-image-height="291" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="500">
+      </div>
+    </section>
+    <section class="u-black u-clearfix u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xl u-section-5" id="carousel_8d3f">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-align-center-xs u-preserve-proportions u-uploaded-video u-video u-video-contain video-mask u-video-1">
+          <div class="embed-responsive">
+            <video class="embed-responsive-item" data-autoplay="1" loop="" muted="" poster="images/Untitled-26_114_layer-468x1024.jpeg" autoplay="autoplay" playsinline="">
+              <source alt="make content calls app video" src="allinone/assets/calls-1.mp4" type="video/mp4">
+              <p>Your browser does not support HTML5 video.</p>
+            </video>
+          </div>
+        </div>
+        <img class="u-align-center-xs u-image u-image-default u-preserve-proportions u-image-1" src="images/iphone-for-videos-gray-506x1024.webp" alt="This is an iphone" data-image-width="506" data-image-height="1024">
+        <h1 class="u-text u-text-1"> Make Content Calls</h1>
+        <p class="u-custom-font u-heading-font u-text u-text-2">Share and sync content on calls more easily than any other mobile app. Make one-on-one or group calls with contacts around the world. All files shared on a call are saved in your history, accessible anytime</p>
+        <a href="calls/" data-page-id="446908948" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-grey-75 u-radius-14 u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1000">learn more</a>
+      </div>
+    </section>
+    <section class="u-black u-clearfix u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xl u-section-6" id="carousel_b4d6">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-align-center-xs u-preserve-proportions u-uploaded-video u-video u-video-contain video-mask u-video-1">
+          <div class="embed-responsive">
+            <video class="embed-responsive-item" data-autoplay="1" loop="" muted="" poster="images/chats_115_layer-477x10241.jpeg" autoplay="autoplay" playsinline="">
+              <source alt="powerful and expressive messaging app video" src="allinone/assets/chat-video.mp4" type="video/mp4">
+              <p>Your browser does not support HTML5 video.</p>
+            </video>
+          </div>
+        </div>
+        <img class="u-align-center-xs u-image u-image-default u-preserve-proportions u-image-1" src="images/iphone-for-videos-gray-506x1024.webp" alt="" data-image-width="506" data-image-height="1024">
+        <h1 class="u-text u-text-1"> Powerful &amp; Expressive Messaging</h1>
+        <p class="u-custom-font u-heading-font u-text u-text-2" tabindex="0" alt="On FYI our default setting is power user" > On FYI chat, our default setting is power user. Organize your conversations by contacts or projects. Send messages with no file size limits</p>
+        <a href="chat/" data-page-id="223806451" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-hover-grey-75 u-radius-14 u-btn-1">learn more</a>
+      </div>
+    </section>
+    <section class="u-black u-clearfix u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xl u-section-7" id="sec-a691">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-custom-html u-expanded-width-xs u-custom-html-1">
+		  
+		  
+		  <!-- START HTML usefyi  -->	
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+
+			
+			<!-- REVOLUTION LAYERS STYLES -->
+						<!-- REVOLUTION JS FILES -->
+			
+		<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+					<script src="usefyi/js/rbtools.min.js"></script>
+							<script src="usefyi/js/rs6.min.js"></script>
+							
+			<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+
+			
+		</head>
+		
+		<body>
+
+			
+
+
+
+					<!-- START USE FYI REVOLUTION SLIDER 6.5.17 --><p class="rs-p-wp-fix"></p>
+			<rs-module-wrap id="rev_slider_80_1_wrapper" data-alias="USE-FYI-END-WB" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;">
+				<rs-module id="rev_slider_80_1" styles="" data-version="6.5.17">
+					<rs-slides>
+						<rs-slide style="position: absolute;" data-key="rs-123" data-title="Slide" data-in="o:0;" data-out="a:false;">
+							<img src="usefyi/assets/transparent.png" alt="This is a slider" title="Slider" class="rev-slidebg tp-rs-img" data-bg="c:#000000;" data-no-retina>
+<!--
+							--><rs-group
+								id="slider-80-slide-123-layer-6" 
+								data-type="group"
+								data-rsp_ch="on"
+								data-xy="xo:538px,453px,321px,179px;yo:292px,230px,244px,281px;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:408,336,380px,361px;h:172,142,160,151;"
+								data-sba="t:true;"
+								data-frame_0="o:1;"
+								data-frame_1="y:0px,0px,0px,-2px;st:510;sR:510;"
+								data-frame_999="x:50,41,31,21px;o:0;st:7310;sp:1510;sR:6500;"
+								style="z-index:15;"
+							><!--
+								--><rs-layer
+									id="slider-80-slide-123-layer-2" 
+									data-type="shape"
+									data-rsp_ch="on"
+									data-xy="xo:48px,39px,0,39px;yo:55px,45px,0,47px;"
+									data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+									data-dim="w:294,242,256px,242px;h:60,49,55px,51px;"
+									data-sba="t:true;"
+									data-border="bor:28px,28px,5px,28px;"
+									data-frame_0="x:43px,35px,40px,37px;"
+									data-frame_1="st:1220;sp:1880;sR:710;"
+									data-frame_999="o:0;st:w;sR:10900;"
+									style="z-index:11;background-color:#2777f3;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-80-slide-123-layer-3" 
+									data-type="text"
+									data-rsp_ch="on"
+									data-xy="x:c;xo:21px,17px,19px,-2px;y:m;yo:-2px,-1px,0,-4px;"
+									data-text="w:normal;s:26,21,23,21;l:30,24,27,24;"
+									data-dim="w:254,209,236px,191px;h:30,24,27px,auto;"
+									data-sba="t:true;"
+									data-frame_0="x:43px,35px,40px,37px;"
+									data-frame_1="x:3px,2px,3px,1px;st:1950;sp:1940;sR:1440;"
+									data-frame_999="o:0;st:w;sR:10110;"
+									style="z-index:12;font-family:'Roboto';"
+								>For Your Creativity 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-80-slide-123-layer-4" 
+									data-type="shape"
+									data-rsp_ch="on"
+									data-xy="x:c;xo:-147px,-121px,-137px,-132px;y:m;yo:-29px,-23px,-27px,-20px;"
+									data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+									data-dim="w:56,46,51px,48px;h:56,46,51px,48px;"
+									data-sba="t:true;"
+									data-border="bor:100px,100px,100px,100px;"
+									data-frame_0="sX:0.9;sY:0.9;"
+									data-frame_1="e:power2.inOut;st:2330;sp:1670;sR:1820;"
+									data-frame_999="o:0;st:w;sR:10000;"
+									style="z-index:13;background-color:#0c0c0c;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-80-slide-123-layer-5" 
+									data-type="image"
+									data-rsp_ch="on"
+									data-xy="x:c;xo:-147px,-121px,-137px,-132px;y:m;yo:-37px,-30px,-33px,-29px;"
+									data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+									data-dim="w:52,42,47px,43px;h:52,42,47px,43px;"
+									data-sba="t:true;"
+									data-frame_0="sX:0.9;sY:0.9;"
+									data-frame_1="st:2730;sp:1320;sR:2220;"
+									data-frame_999="o:0;st:w;sR:9950;"
+									style="z-index:14;"
+								><img src="allinone/assets/fire2.gif" alt="This is a fire emoji logo" title="This is a fire emoji" class="tp-rs-img" width="100" height="100" data-no-retina> 
+								</rs-layer><!--
+							--></rs-group><!--
+
+							--><rs-group
+								id="slider-80-slide-123-layer-17" 
+								data-type="group"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-130px,453px,321px,-80px;yo:407px,230px,244px,422px;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:408,336,380px,358px;h:172,142,160,150;"
+								data-sba="t:true;"
+								data-frame_0="o:1;"
+								data-frame_1="st:510;sR:510;"
+								data-frame_999="x:-50,-41,-31,-21px;o:0;st:7530;sp:1590;sR:6720;"
+								style="z-index:20;"
+							><!--
+								--><rs-layer
+									id="slider-80-slide-123-layer-18" 
+									data-type="shape"
+									data-rsp_ch="on"
+									data-xy="x:c;y:m;"
+									data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+									data-dim="w:321px,265px,256px,271px;h:60,49,55px,57px;"
+									data-sba="t:true;"
+									data-border="bor:28px,28px,28px,5px;"
+									data-frame_0="x:43px,35px,40px,41px;"
+									data-frame_1="st:2330;sp:1880;sR:1820;"
+									data-frame_999="o:0;st:w;sR:9790;"
+									style="z-index:16;background-color:#2b2b2b;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-80-slide-123-layer-19" 
+									data-type="text"
+									data-rsp_ch="on"
+									data-xy="x:c;xo:-6px,-4px,19px,-5px;y:m;yo:1px,0,0,0;"
+									data-text="w:normal;s:25,20,23,22;l:30,24,27,24;"
+									data-dim="w:265px,218px,236px,237px;h:36px,29px,27px,auto;"
+									data-sba="t:true;"
+									data-frame_0="x:43px,35px,40px,36px;"
+									data-frame_1="x:3px,2px,3px,1px;st:2820;sp:1940;sR:2310;"
+									data-frame_999="o:0;st:w;sR:9240;"
+									style="z-index:17;font-family:'Roboto';"
+								>For Your Collaboration 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-80-slide-123-layer-20" 
+									data-type="shape"
+									data-rsp_ch="on"
+									data-xy="x:c;xo:152px,125px,-137px,131px;y:m;yo:-27px,-22px,-27px,-20px;"
+									data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+									data-dim="w:56,46,51px,47px;h:56,46,51px,47px;"
+									data-sba="t:true;"
+									data-border="bor:100px,100px,100px,100px;"
+									data-frame_0="sX:0.9;sY:0.9;"
+									data-frame_1="e:power2.inOut;st:3670;sp:1670;sR:3160;"
+									data-frame_999="o:0;st:w;sR:8660;"
+									style="z-index:18;background-color:#0c0c0c;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-80-slide-123-layer-21" 
+									data-type="image"
+									data-rsp_ch="on"
+									data-xy="xo:332px,274px,-137px,295px;yo:32px,26px,-33px,33px;"
+									data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+									data-dim="w:52,42,47px,43px;h:52px,42px,47px,43px;"
+									data-sba="t:true;"
+									data-frame_0="sX:0.9;sY:0.9;"
+									data-frame_1="st:4060;sp:1320;sR:3550;"
+									data-frame_999="o:0;st:w;sR:8620;"
+									style="z-index:19;"
+								><img src="allinone/assets/thumbsup.gif" alt="This is a thumbs up emoji" title="This is a thumbs up" class="tp-rs-img" width="100" height="100" data-no-retina> 
+								</rs-layer><!--
+							--></rs-group><!--
+
+							--><rs-group
+								id="slider-80-slide-123-layer-22" 
+								data-type="group"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:108px,453px,321px,139px;yo:530px,230px,244px,549px;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:408,336,380px,393px;h:172,142,160,165;"
+								data-sba="t:true;e:true;"
+								data-frame_0="o:1;"
+								data-frame_1="st:510;sR:510;"
+								data-frame_999="x:50,41,31,23px;o:0;st:7830;sp:1610;sR:7020;"
+								style="z-index:25;"
+							><!--
+								--><rs-layer
+									id="slider-80-slide-123-layer-23" 
+									data-type="shape"
+									data-rsp_ch="on"
+									data-xy="xo:48px,39px,0,10px;yo:55px,45px,0,65px;"
+									data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+									data-dim="w:294,242,256px,264px;h:60,49,55px,56px;"
+									data-sba="t:true;"
+									data-border="bor:28px,28px,5px,28px;"
+									data-frame_0="x:43px,35px,40px,40px;"
+									data-frame_1="st:3170;sp:1880;sR:2660;"
+									data-frame_999="o:0;st:w;sR:8950;"
+									style="z-index:21;background-color:#2777f3;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-80-slide-123-layer-24" 
+									data-type="text"
+									data-rsp_ch="on"
+									data-xy="x:c;xo:16px,13px,19px,-30px;y:m;yo:-3px,-2px,0,12px;"
+									data-text="w:normal;s:26,21,23,23;l:30,24,27,27;"
+									data-dim="w:254,209,236px,238px;h:30,24,27px,auto;"
+									data-sba="t:true;"
+									data-frame_0="x:43px,35px,40px,40px;"
+									data-frame_1="x:3px,2px,3px,1px;st:3590;sp:1940;sR:3080;"
+									data-frame_999="o:0;st:w;sR:8470;"
+									style="z-index:22;font-family:'Roboto';"
+								>For Your Inspiration 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-80-slide-123-layer-25" 
+									data-type="shape"
+									data-rsp_ch="on"
+									data-xy="x:c;xo:-147px,-121px,-137px,-174px;y:m;yo:-29px,-23px,-27px,-12px;"
+									data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+									data-dim="w:56,46,51px,52px;h:56,46,51px,52px;"
+									data-sba="t:true;"
+									data-border="bor:100px,100px,100px,100px;"
+									data-frame_0="sX:0.9;sY:0.9;"
+									data-frame_1="e:power2.inOut;st:4160;sp:1670;sR:3650;"
+									data-frame_999="o:0;st:w;sR:8170;"
+									style="z-index:23;background-color:#0c0c0c;"
+								> 
+								</rs-layer><!--
+
+								--><rs-layer
+									id="slider-80-slide-123-layer-26" 
+									data-type="image"
+									data-rsp_ch="on"
+									data-xy="x:c;xo:-148px,-122px,-137px,-173px;y:m;yo:-29px,-23px,-33px,-13px;"
+									data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+									data-dim="w:52,42,47px,47px;h:52px,42px,47px,47px;"
+									data-sba="t:true;"
+									data-frame_0="sX:0.9;sY:0.9;"
+									data-frame_1="st:4760;sp:1320;sR:4250;"
+									data-frame_999="o:0;st:w;sR:7920;"
+									style="z-index:24;"
+								><img src="allinone/assets/heart.gif" alt="This is a heart gif" title="This is a heart" class="tp-rs-img" width="100" height="100" data-no-retina> 
+								</rs-layer><!--
+							--></rs-group><!--
+
+							--><rs-layer
+								id="slider-80-slide-123-layer-1" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-7px,0,5px,0;yo:144px,108px,90px,137px;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:379px,362px,390px,364px;h:767px,650px,700px,736px;"
+								data-sba="t:true;"
+								data-frame_0="o:1;"
+								data-frame_999="y:50,41,31,19;o:0;st:8030;sp:1910;sR:7980;"
+								style="z-index:10;"
+							><img src="usefyi/assets/usefyi2-min-1.png" alt="" class="tp-rs-img" width="798" height="1614" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-80-slide-123-layer-27" 
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-5px,-4px,-3px,2px;y:m;yo:58px,69px,52px,30px;"
+								data-text="w:normal;s:50,41,31,40;l:25,20,15,9;"
+								data-dim="h:auto,auto,auto,21px;"
+								data-sba="t:true;"
+								data-frame_0="y:50,41,31,19;"
+								data-frame_1="st:10010;sp:2830;sR:10010;"
+								data-frame_999="o:0;st:w;sR:1160;"
+								style="z-index:9;font-family:'Roboto';"
+							>TO FOCUS YOUR IDEAS 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-80-slide-123-layer-28" 
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-5px,-4px,-3px,-1px;yo:90px,69px,52px,78px;"
+								data-text="w:normal;s:50,41,31,40;l:25,20,15,9;"
+								data-dim="h:auto,auto,auto,21px;"
+								data-sba="t:true;"
+								data-ford="frame_0;frame_1;frame_2;frame_999;"
+								data-frame_1="sp:100;"
+								data-frame_999="o:0;st:w;sR:1610;"
+								data-frame_2="y:315px,260px,197px,260px;sX:1.5;sY:1.5;oX:50%;oY:50%;oZ:0;tp:600;st:8990;sp:3400;sR:8890;"
+								style="z-index:8;font-family:'Roboto';"
+							>USE FYI 
+							</rs-layer><!--
+-->						</rs-slide>
+					</rs-slides>
+
+
+					
+				</rs-module>
+				<script>
+					
+				</script>
+<script>
+		if(typeof revslider_showDoubleJqueryError === "undefined") {function revslider_showDoubleJqueryError(sliderID) {console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");console.log("To fix this, you can:");console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");console.log("2. Find the double jQuery.js inclusion and remove it");return "Double Included jQuery Library";}}
+</script>
+			</rs-module-wrap>
+			<!-- END REVOLUTION SLIDER -->
+
+				<script>
+					var	tpj = jQuery;
+					if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+					if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+					RS_MODULES.modules["revslider801"] = {once: RS_MODULES.modules["revslider801"]!==undefined ? RS_MODULES.modules["revslider801"].once : undefined, init:function() {
+						window.revapi80 = window.revapi80===undefined || window.revapi80===null || window.revapi80.length===0  ? document.getElementById("rev_slider_80_1") : window.revapi80;
+						if(window.revapi80 === null || window.revapi80 === undefined || window.revapi80.length==0) { window.revapi80initTry = window.revapi80initTry ===undefined ? 0 : window.revapi80initTry+1; if (window.revapi80initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider801"].init()}); return;}
+						window.revapi80 = jQuery(window.revapi80);
+						if(window.revapi80.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_80_1"); return;}
+						revapi80.revolutionInit({
+								revapi:"revapi80",
+								DPR:"dpr",
+								sliderLayout:"fullscreen",
+								duration:"14000ms",
+								visibilityLevels:"1240,1024,778,480",
+								gridwidth:"1240,1024,778,480",
+								gridheight:"850,768,960,900",
+								perspective:600,
+								perspectiveType:"global",
+								editorheight:"850,768,960,900",
+								responsiveLevels:"1240,1024,778,480",
+								progressBar:{disableProgressBar:true},
+								navigation: {
+									onHoverStop:false
+								},
+								scrolleffect: {
+									set:true,
+									multiplicator:1.3,
+									multiplicator_layers:1.3
+								},
+								sbtimeline: {
+									set:true,
+									fixed:true,
+									fixStart:10,
+									fixEnd:"13000ms"
+								},
+								viewPort: {
+									global:false,
+									globalDist:"-200px",
+									enable:false
+								},
+								fallbacks: {
+									allowHTML5AutoPlayOnAndroid:true
+								},
+						});
+						
+					}} // End of RevInitScript
+					if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
+				</script>
+
+
+	<!-- END HTML usefyi  -->		
+		  
+		  </div>
+      </div>
+    </section>
+    <!-- begin footer -->
+    
+ <footer class="u-align-center-sm u-align-center-xs u-black u-border-1 u-border-grey-80 u-border-no-bottom u-border-no-left u-border-no-right u-clearfix u-footer" role="navigation" aria-label="Footer Navigation" sec-a012><div class="u-clearfix u-sheet u-sheet-1">
+	<!-- originally it was index..html but did not work on local -->
+        <a href="index.html" data-page-id="878004943" class="u-align-center u-image u-logo u-image-1" data-image-width="283" data-image-height="241" alt="Home" title="Home">
+          <img alt="FYI logo" src="images/FYILOGO1.svg" alt="This is a link to the home page" title="This is the FYI logo" aria-label="This is the FYI logo" role="button" type="link" class="u-logo-image u-logo-image-1">
+        </a>
+
+		
+        <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-container-style u-layout-cell u-left-cell u-size-60 u-layout-cell-1">
+                <div class="u-container-layout u-valign-top u-container-layout-1"><!--position-->
+                  <div data-position="" class="u-position u-position-1"><!--block--><!--/block--></div><!--/position-->
+                  <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="XS">
+                    <div class="menu-collapse" style="font-size: 0.875rem; letter-spacing: 0px; text-transform: uppercase; font-weight: 700;">
+                      <a class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link"title="Hamburger Menu" alt="Hamburger Menu" href="#">
+						<!-- something to change the background for because the contrast is poor ADA -->
+                        <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#svg-238d"></use></svg>
+                        <svg class="u-svg-content" version="1.1" id="svg-238d" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="https://www.w3.org/1999/xlink" xmlns="https://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+                      </a>
+                    </div>
+                    <div class="u-custom-menu u-nav-container">
+                      <ul class="u-custom-font u-heading-font u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="./../index.html" target="_blank" aria-label="Link to the Home page" role="button" type="link" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="https://fyihelp.zendesk.com/hc/en-us" target="_blank" aria-label="Link to Contact Us page" role="button" type="link" style="padding: 10px 20px;">Contact Us</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="./aboutus/" target="_blank" style="padding: 10px 20px;" aria-label="Link to About us" role="button" type="link">About Us</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="./team/" target="_blank" style="padding: 10px 20px;" aria-label="Link to The Team" role="button" type="link">The Team</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="./terms/" target="_blank" style="padding: 10px 20px;" aria-label="Link to Terms and Conditions" role="button" type="link">Terms &amp; Conditions</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="./privacy/" target="_blank" style="padding: 10px 20px;" aria-label="Link to the Privacy Policy" role="button" type="link">Privacy Policy</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="./careers/" target="_blank" style="padding: 10px 20px;" aria-label="Link to the Careers Page" role="button" type="link">Careers</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-custom-color-1 u-border-hover-white u-button-style u-nav-link u-text-active-white u-text-hover-custom-color-1 u-text-white" href="https://apps.apple.com/us/app/fyi-me-focus-your-ideas/id1554341467" target="_blank" style="padding: 10px 20px;"aria-label="Link to download the app" role="button" type="link">Download</a>
+</li></ul>
+                    </div>
+                    <div class="u-custom-menu u-nav-container-collapse">
+                      <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                        <div class="u-inner-container-layout u-sidenav-overflow">
+                          <div class="u-menu-close"></div>
+                          <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./../index.html" aria-label="Back to homepage link" role="button">Home</a>
+
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./contact/" type="link" title="Contact us link" alt="Contact us link" aria-label="Link to the Contact us page" role="button">Contact Us</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./aboutus/" type="link" title="About us link" alt="About us Link" aria-label="Link to the about us page" role="button">About Us</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./team/" type="link" title="The Team Link" alt="The team link" aria-label="Link to The Team page" role="button">The Team</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./terms/" type="link" title="Terms and Conditions Link" alt="Terms and Conditions Link" aria-label="Link to the Terms and Conditions page" role="button">Terms &amp; Conditions</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./privacy/" type="link" title="Privacy Policy Link" alt="Privacy Policy Link"aria-label="Link to our Privacy Policy" role="button">Privacy Policy</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./careers/" type="link" title="Careers Link" alt="Careers Link" aria-label="Link to our Careers page" role="button">Careers</a>
+</li></ul>
+                        </div>
+                      </div>
+                      <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+        <p class="u-align-center u-large-text u-text u-text-default u-text-grey-30 u-text-variant u-text-1"> 
+			&copy; <span id="year"> </span> FYI.FYI, Inc. </p>
+			<!-- this allows for the year to change without manually editing every page -->
+      </div></footer>
+  </body>
+</html>

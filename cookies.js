@@ -1,20 +1,5 @@
 // begin cookie.js
 
-/* 
-Once someone is on the site this js code will launch the button asking for cookie permission 
-If the cookie already exists on the system then the launcher will not show up as the cookie has already been accepted/denied
-If it is the users first time or the cookie has expired then it will ask the user again if they would like to accept/deny 
-Some cookies expire after the user leaves the site so they only last for the session and the user will be prompted again 
-
-github git ignore remove
-
-rm .gitignore
-del .gititgnore
-git add .
-git commit -m "removed"
-git push
-*/
-
 // creates the cookie box and button banner 
 const cookieBox = document.querySelector(".wrapper-cookie");
 const buttons = document.querySelectorAll(".button-cookie");
@@ -24,7 +9,12 @@ const executeCodes = () => {
 // Check if cookie contains FYI name check cookie once the website is active
 
 // cookie for saved preference 
-if (document.cookie.includes("savePref"))
+cookieClass();
+
+// begin function cookies 
+function cookieClass()
+{
+  if (document.cookie.includes("savePref"))
 {
   cookieBox.classList.remove("show");
 }
@@ -32,9 +22,19 @@ else if (document.cookie.includes("declineSavePref"))
 {
   cookieBox.classList.remove("show")
 }
+else if (document.cookie.includes("ga-cookie"))
+{
+  cookieBox.classList.remove("show");
+}
+else if (document.cookie.includes("gid-cookie"))
+{
+  cookieBox.classList.remove("show");
+}
 else
 {
   cookieBox.classList.add("show");
+}
+
 }
 
 
@@ -64,7 +64,6 @@ if (button.id == "declineBtn-cookie")
 else 
 {
   // Delete the cookies because this date has already passed 
-// these cookies are google analytic cookies and they are set to false/null 
 ga('set', 'anonymizeIp', true);
 ga('set', 'displayFeaturesTask', null);
 ga('set', 'useAmpClientId', null);
@@ -100,7 +99,7 @@ cf('set', 'displayFeaturesTask', null);
 cf('set', 'useAmpClientId', null);
 cf('set', 'allowAdFeatures', false);
 cf('set', 'allowLinker', false);
-/* _ga, _gid, _gat, _gat_gtag, 1P_JAR __cf_bm */
+// these cookies are google analytic cookies and they are set to false/null 
 
 document.cookie = "_ga=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
 document.cookie = "_gid=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure;";
@@ -116,3 +115,20 @@ document.cookie = "JAR; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; secure";
 
 window.addEventListener("load", executeCodes);
 // end cookie.js
+
+
+/* 
+What this code does: 
+Once someone is on the site this js code will launch the button asking for cookie permission 
+If the cookie already exists on the system then the launcher will not show up as the cookie has already been accepted/denied
+If it is the users first time or the cookie has expired then it will ask the user again if they would like to accept/deny 
+Some cookies expire after the user leaves the site so they only last for the session and the user will be prompted again 
+
+Push to github: 
+github git ignore remove
+rm .gitignore
+del .gititgnore
+git add .
+git commit -m "removed"
+git push
+*/

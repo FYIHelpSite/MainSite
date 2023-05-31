@@ -1,0 +1,18 @@
+.carousel-inner
+{
+    background-color: darkblue; 
+    width: 100% !important;
+    height: auto !important; 
+}
+
+.carousel .carousel-item {
+    height: 500px;
+  }
+  
+  .carousel-item img {
+      position: block;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      min-height: 500px;
+  }
